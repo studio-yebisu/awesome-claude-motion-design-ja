@@ -1,0 +1,595 @@
+{
+  "checked_on": "2026-10-12",
+  "timezone": "Asia/Tokyo",
+  "sources": [
+    {
+      "requested_repository": "abhimahamkali/claude-motion-skill",
+      "repository": "abhimahamkali/claude-motion-skill",
+      "url": "https://github.com/abhimahamkali/claude-motion-skill",
+      "homepage": null,
+      "stars": 0,
+      "archived": false,
+      "pushed_at": "2026-10-06T10:39:24Z",
+      "default_branch": "main",
+      "commit_sha": "37d44b5d2db8e28c4ebf011cb8f1bd1e260ac09c",
+      "github_license": "UNSPECIFIED",
+      "license_paths": [],
+      "readme_url": "https://github.com/abhimahamkali/claude-motion-skill/blob/37d44b5d2db8e28c4ebf011cb8f1bd1e260ac09c/README.md",
+      "verified_at": "2026-10-12T13:44:49.959273+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "airbnb/lottie-web",
+      "repository": "airbnb/lottie-web",
+      "url": "https://github.com/airbnb/lottie-web",
+      "homepage": "",
+      "stars": 32213,
+      "archived": false,
+      "pushed_at": "2025-09-01T09:01:31Z",
+      "default_branch": "master",
+      "commit_sha": "bede03d25d232826e0c9dca1733d542d8a7754fb",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE.md"
+      ],
+      "readme_url": "https://github.com/airbnb/lottie-web/blob/bede03d25d232826e0c9dca1733d542d8a7754fb/README.md",
+      "verified_at": "2026-10-12T13:44:44.550686+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "apimodels/claude-opus-5-5-video-prompts",
+      "repository": "apimodels/claude-opus-5-5-video-prompts",
+      "url": "https://github.com/apimodels/claude-opus-5-5-video-prompts",
+      "homepage": "https://apimodels.app/claude-opus-5-5-video-prompts",
+      "stars": 0,
+      "archived": false,
+      "pushed_at": "2026-10-07T15:26:23Z",
+      "default_branch": "main",
+      "commit_sha": "383335d1ed1a6a6d84b772d7c802ca0d221f6410",
+      "github_license": "CC-BY-4.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/apimodels/claude-opus-5-5-video-prompts/blob/383335d1ed1a6a6d84b772d7c802ca0d221f6410/README.md",
+      "verified_at": "2026-10-12T13:44:52.556627+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "catdad/canvas-confetti",
+      "repository": "catdad/canvas-confetti",
+      "url": "https://github.com/catdad/canvas-confetti",
+      "homepage": "https://catdad.github.io/canvas-confetti/",
+      "stars": 12797,
+      "archived": false,
+      "pushed_at": "2025-10-25T05:17:21Z",
+      "default_branch": "master",
+      "commit_sha": "20eebad51dde793070c373d594099a7ed8d96e22",
+      "github_license": "ISC",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/catdad/canvas-confetti/blob/20eebad51dde793070c373d594099a7ed8d96e22/README.md",
+      "verified_at": "2026-10-12T13:44:38.245071+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "charlie947/motion-graphics-skills",
+      "repository": "charlie947/motion-graphics-skills",
+      "url": "https://github.com/charlie947/motion-graphics-skills",
+      "homepage": "https://charliehills.substack.com",
+      "stars": 228,
+      "archived": false,
+      "pushed_at": "2026-10-11T08:44:11Z",
+      "default_branch": "main",
+      "commit_sha": "229022ebca76972e119e36ada23a1648d51665ab",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/charlie947/motion-graphics-skills/blob/229022ebca76972e119e36ada23a1648d51665ab/README.md",
+      "verified_at": "2026-10-12T13:44:49.238457+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "d3/d3",
+      "repository": "d3/d3",
+      "url": "https://github.com/d3/d3",
+      "homepage": "https://d3js.org",
+      "stars": 113734,
+      "archived": false,
+      "pushed_at": "2026-05-28T14:43:01Z",
+      "default_branch": "main",
+      "commit_sha": "ca958d45217b4c15332d971b935451a6d4c978f4",
+      "github_license": "ISC",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/d3/d3/blob/ca958d45217b4c15332d971b935451a6d4c978f4/README.md",
+      "verified_at": "2026-10-12T13:44:47.358784+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "emilkowalski/skills",
+      "repository": "emilkowalski/skills",
+      "url": "https://github.com/emilkowalski/skills",
+      "homepage": "https://emilkowal.ski/skill",
+      "stars": 45580,
+      "archived": false,
+      "pushed_at": "2026-10-11T13:58:36Z",
+      "default_branch": "main",
+      "commit_sha": "2d228630ba1446365f614a108cb8252f1feda202",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/README.md",
+      "verified_at": "2026-10-12T13:44:49.453410+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "fabricjs/fabric.js",
+      "repository": "fabricjs/fabric.js",
+      "url": "https://github.com/fabricjs/fabric.js",
+      "homepage": "http://fabricjs.com",
+      "stars": 31480,
+      "archived": false,
+      "pushed_at": "2026-10-12T08:58:24Z",
+      "default_branch": "master",
+      "commit_sha": "54f050648cb67f7066b108f63cf1824039860d92",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/fabricjs/fabric.js/blob/54f050648cb67f7066b108f63cf1824039860d92/README.md",
+      "verified_at": "2026-10-12T13:44:35.468617+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "FFmpeg/FFmpeg",
+      "repository": "FFmpeg/FFmpeg",
+      "url": "https://github.com/FFmpeg/FFmpeg",
+      "homepage": "https://ffmpeg.org/",
+      "stars": 65035,
+      "archived": false,
+      "pushed_at": "2026-10-12T13:08:48Z",
+      "default_branch": "master",
+      "commit_sha": "6ef3b1ba966233a0964bcc4aa1c2e20d014a5052",
+      "github_license": "NOASSERTION",
+      "license_paths": [
+        "COPYING.GPLv2",
+        "COPYING.GPLv3",
+        "COPYING.LGPLv2.1",
+        "COPYING.LGPLv3",
+        "LICENSE.md"
+      ],
+      "readme_url": "https://github.com/FFmpeg/FFmpeg/blob/6ef3b1ba966233a0964bcc4aa1c2e20d014a5052/README.md",
+      "verified_at": "2026-10-12T13:44:44.378752+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "ffmpegwasm/ffmpeg.wasm",
+      "repository": "ffmpegwasm/ffmpeg.wasm",
+      "url": "https://github.com/ffmpegwasm/ffmpeg.wasm",
+      "homepage": "https://ffmpegwasm.netlify.app",
+      "stars": 17856,
+      "archived": false,
+      "pushed_at": "2026-09-29T21:30:20Z",
+      "default_branch": "main",
+      "commit_sha": "f876f907c7e9b9bf51d4ed0b913a855a63ae63fc",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/ffmpegwasm/ffmpeg.wasm/blob/f876f907c7e9b9bf51d4ed0b913a855a63ae63fc/README.md",
+      "verified_at": "2026-10-12T13:44:35.444922+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "greensock/GSAP",
+      "repository": "greensock/GSAP",
+      "url": "https://github.com/greensock/GSAP",
+      "homepage": "https://gsap.com",
+      "stars": 29108,
+      "archived": false,
+      "pushed_at": "2026-04-13T13:08:58Z",
+      "default_branch": "master",
+      "commit_sha": "13e2b790546426a1a2e0e9b409f3f8dc6d6611f2",
+      "github_license": "UNSPECIFIED",
+      "license_paths": [],
+      "readme_url": "https://github.com/greensock/GSAP/blob/13e2b790546426a1a2e0e9b409f3f8dc6d6611f2/README.md",
+      "verified_at": "2026-10-12T13:44:43.851659+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "greggman/twgl.js",
+      "repository": "greggman/twgl.js",
+      "url": "https://github.com/greggman/twgl.js",
+      "homepage": "http://twgljs.org",
+      "stars": 3012,
+      "archived": false,
+      "pushed_at": "2026-09-09T06:59:24Z",
+      "default_branch": "main",
+      "commit_sha": "aa33c0aa5b095e57b9a5cde0cf241e66a6c95f2e",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE.md"
+      ],
+      "readme_url": "https://github.com/greggman/twgl.js/blob/aa33c0aa5b095e57b9a5cde0cf241e66a6c95f2e/README.md",
+      "verified_at": "2026-10-12T13:44:38.470275+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "heygen-com/hyperframes",
+      "repository": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "homepage": "https://hyperframes.dev",
+      "stars": 61466,
+      "archived": false,
+      "pushed_at": "2026-10-12T13:23:19Z",
+      "default_branch": "main",
+      "commit_sha": "fbbc4e88c59c01bfec69368a9a587d3438a7d32a",
+      "github_license": "Apache-2.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/heygen-com/hyperframes/blob/fbbc4e88c59c01bfec69368a9a587d3438a7d32a/README.md",
+      "verified_at": "2026-10-12T13:44:41.334925+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "howseen-ai/claude-motion-design",
+      "repository": "howseen-ai/claude-motion-design",
+      "url": "https://github.com/howseen-ai/claude-motion-design",
+      "homepage": "https://howseen.ai",
+      "stars": 466,
+      "archived": false,
+      "pushed_at": "2026-10-04T05:56:51Z",
+      "default_branch": "main",
+      "commit_sha": "3d90d349ef3fdde9b7e89de4df4a2159c9e8697f",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/howseen-ai/claude-motion-design/blob/3d90d349ef3fdde9b7e89de4df4a2159c9e8697f/README.md",
+      "verified_at": "2026-10-12T13:44:49.713124+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "iart-ai/motion-skills",
+      "repository": "iart-ai/motion-skills",
+      "url": "https://github.com/iart-ai/motion-skills",
+      "homepage": "https://www.iart.ai",
+      "stars": 789,
+      "archived": false,
+      "pushed_at": "2026-09-30T07:17:07Z",
+      "default_branch": "master",
+      "commit_sha": "4a9822375b589294aa369fde44205c62dfcf9c27",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/iart-ai/motion-skills/blob/4a9822375b589294aa369fde44205c62dfcf9c27/README.md",
+      "verified_at": "2026-10-12T13:44:51.757782+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "juliangarnier/anime",
+      "repository": "juliangarnier/anime",
+      "url": "https://github.com/juliangarnier/anime",
+      "homepage": "https://animejs.com",
+      "stars": 73531,
+      "archived": false,
+      "pushed_at": "2026-08-21T21:29:50Z",
+      "default_branch": "master",
+      "commit_sha": "01b81be1df6843ccfe0a71c0699a746bf740dd77",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE.md"
+      ],
+      "readme_url": "https://github.com/juliangarnier/anime/blob/01b81be1df6843ccfe0a71c0699a746bf740dd77/README.md",
+      "verified_at": "2026-10-12T13:44:44.406578+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "ManimCommunity/manim",
+      "repository": "ManimCommunity/manim",
+      "url": "https://github.com/ManimCommunity/manim",
+      "homepage": "https://www.manim.community",
+      "stars": 41457,
+      "archived": false,
+      "pushed_at": "2026-10-10T20:14:58Z",
+      "default_branch": "main",
+      "commit_sha": "a6d5cc02b430fb57d22add51236b6406fbf19d91",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE",
+        "LICENSE.community"
+      ],
+      "readme_url": "https://github.com/ManimCommunity/manim/blob/a6d5cc02b430fb57d22add51236b6406fbf19d91/README.md",
+      "verified_at": "2026-10-12T13:44:47.892625+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "microsoft/playwright",
+      "repository": "microsoft/playwright",
+      "url": "https://github.com/microsoft/playwright",
+      "homepage": "https://playwright.dev",
+      "stars": 97542,
+      "archived": false,
+      "pushed_at": "2026-10-11T22:43:51Z",
+      "default_branch": "main",
+      "commit_sha": "d9f2fd3e2232ace8e317a84eda6cb86e25bcf49c",
+      "github_license": "Apache-2.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/microsoft/playwright/blob/d9f2fd3e2232ace8e317a84eda6cb86e25bcf49c/README.md",
+      "verified_at": "2026-10-12T13:44:41.590922+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "motion-canvas/motion-canvas",
+      "repository": "motion-canvas/motion-canvas",
+      "url": "https://github.com/motion-canvas/motion-canvas",
+      "homepage": "https://motion-canvas.io",
+      "stars": 19291,
+      "archived": false,
+      "pushed_at": "2026-07-02T20:01:32Z",
+      "default_branch": "main",
+      "commit_sha": "7b91435c301d530351dcf5ebb91dd139c002e405",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/motion-canvas/motion-canvas/blob/7b91435c301d530351dcf5ebb91dd139c002e405/README.md",
+      "verified_at": "2026-10-12T13:44:41.675207+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "motiondivision/motion",
+      "repository": "motiondivision/motion",
+      "url": "https://github.com/motiondivision/motion",
+      "homepage": "https://motion.dev",
+      "stars": 34022,
+      "archived": false,
+      "pushed_at": "2026-10-12T13:35:48Z",
+      "default_branch": "main",
+      "commit_sha": "e6bf03ead39cae7a2c5f8fe902ce8a9c1a9a22e8",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE.md"
+      ],
+      "readme_url": "https://github.com/motiondivision/motion/blob/e6bf03ead39cae7a2c5f8fe902ce8a9c1a9a22e8/README.md",
+      "verified_at": "2026-10-12T13:44:35.659219+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "mrdoob/three.js",
+      "repository": "mrdoob/three.js",
+      "url": "https://github.com/mrdoob/three.js",
+      "homepage": "https://threejs.org/",
+      "stars": 116295,
+      "archived": false,
+      "pushed_at": "2026-10-12T11:05:20Z",
+      "default_branch": "dev",
+      "commit_sha": "2a8cd874803effdc99cf2db0cd0ff2f683d69389",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/mrdoob/three.js/blob/2a8cd874803effdc99cf2db0cd0ff2f683d69389/README.md",
+      "verified_at": "2026-10-12T13:44:35.426708+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "pixijs/pixijs",
+      "repository": "pixijs/pixijs",
+      "url": "https://github.com/pixijs/pixijs",
+      "homepage": "http://pixijs.com",
+      "stars": 48353,
+      "archived": false,
+      "pushed_at": "2026-10-10T15:14:52Z",
+      "default_branch": "dev",
+      "commit_sha": "65552017d23255c1442a7d4ac7f0d49e3225fb1d",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/pixijs/pixijs/blob/65552017d23255c1442a7d4ac7f0d49e3225fb1d/README.md",
+      "verified_at": "2026-10-12T13:44:46.531446+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "pmndrs/drei",
+      "repository": "pmndrs/drei",
+      "url": "https://github.com/pmndrs/drei",
+      "homepage": "https://docs.pmnd.rs/drei",
+      "stars": 9928,
+      "archived": false,
+      "pushed_at": "2026-10-05T19:35:53Z",
+      "default_branch": "master",
+      "commit_sha": "bf6f4addf47467d3885de272d94ca5127f6ef68f",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/pmndrs/drei/blob/bf6f4addf47467d3885de272d94ca5127f6ef68f/README.md",
+      "verified_at": "2026-10-12T13:44:38.367049+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "pmndrs/react-three-fiber",
+      "repository": "pmndrs/react-three-fiber",
+      "url": "https://github.com/pmndrs/react-three-fiber",
+      "homepage": "https://docs.pmnd.rs/react-three-fiber",
+      "stars": 32908,
+      "archived": false,
+      "pushed_at": "2026-10-12T10:44:46Z",
+      "default_branch": "master",
+      "commit_sha": "9e53355ce499ea518ac3729de7fd4dcc06d8cdb9",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/pmndrs/react-three-fiber/blob/9e53355ce499ea518ac3729de7fd4dcc06d8cdb9/readme.md",
+      "verified_at": "2026-10-12T13:44:46.435831+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "readme.md"
+    },
+    {
+      "requested_repository": "remotion-dev/remotion",
+      "repository": "remotion-dev/remotion",
+      "url": "https://github.com/remotion-dev/remotion",
+      "homepage": "https://remotion.dev",
+      "stars": 63476,
+      "archived": false,
+      "pushed_at": "2026-10-12T13:39:14Z",
+      "default_branch": "main",
+      "commit_sha": "d5f455390933ab7a48d6ca79a5f4f0223234a802",
+      "github_license": "NOASSERTION",
+      "license_paths": [
+        "LICENSE.md"
+      ],
+      "readme_url": "https://github.com/remotion-dev/remotion/blob/d5f455390933ab7a48d6ca79a5f4f0223234a802/README.md",
+      "verified_at": "2026-10-12T13:44:41.248632+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "remotion-dev/skills",
+      "repository": "remotion-dev/skills",
+      "url": "https://github.com/remotion-dev/skills",
+      "homepage": null,
+      "stars": 5053,
+      "archived": false,
+      "pushed_at": "2026-10-12T09:05:46Z",
+      "default_branch": "main",
+      "commit_sha": "7ba4dcf8ebe1626b00baa41e1f2478113719b60b",
+      "github_license": "UNSPECIFIED",
+      "license_paths": [],
+      "readme_url": "https://github.com/remotion-dev/skills/blob/7ba4dcf8ebe1626b00baa41e1f2478113719b60b/README.md",
+      "verified_at": "2026-10-12T13:44:47.025721+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "rive-app/rive-runtime",
+      "repository": "rive-app/rive-runtime",
+      "url": "https://github.com/rive-app/rive-runtime",
+      "homepage": "",
+      "stars": 1213,
+      "archived": false,
+      "pushed_at": "2026-10-12T06:04:14Z",
+      "default_branch": "main",
+      "commit_sha": "daf55385b71fb861b2a1ae2930ae4492832d5db5",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/rive-app/rive-runtime/blob/daf55385b71fb861b2a1ae2930ae4492832d5db5/README.md",
+      "verified_at": "2026-10-12T13:44:38.876750+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "shuding/cobe",
+      "repository": "shuding/cobe",
+      "url": "https://github.com/shuding/cobe",
+      "homepage": "https://cobe.vercel.app",
+      "stars": 5960,
+      "archived": false,
+      "pushed_at": "2026-09-22T07:38:35Z",
+      "default_branch": "main",
+      "commit_sha": "7e94076fa8c38707f4c9cd114ff4f7c5c880971e",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/shuding/cobe/blob/7e94076fa8c38707f4c9cd114ff4f7c5c880971e/README.md",
+      "verified_at": "2026-10-12T13:44:38.348771+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "Vanilagy/mediabunny",
+      "repository": "Vanilagy/mediabunny",
+      "url": "https://github.com/Vanilagy/mediabunny",
+      "homepage": "https://mediabunny.dev/",
+      "stars": 7286,
+      "archived": false,
+      "pushed_at": "2026-10-12T09:34:49Z",
+      "default_branch": "main",
+      "commit_sha": "cc108b3b492d1e00aa976586b6d3f344a0bd178d",
+      "github_license": "MPL-2.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/Vanilagy/mediabunny/blob/cc108b3b492d1e00aa976586b6d3f344a0bd178d/README.md",
+      "verified_at": "2026-10-12T13:44:43.913740+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "visgl/deck.gl",
+      "repository": "visgl/deck.gl",
+      "url": "https://github.com/visgl/deck.gl",
+      "homepage": "https://deck.gl",
+      "stars": 14652,
+      "archived": false,
+      "pushed_at": "2026-10-11T20:59:34Z",
+      "default_branch": "master",
+      "commit_sha": "d9e395c935d962740e4b6debb7b63e1b4391b1b5",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/visgl/deck.gl/blob/d9e395c935d962740e4b6debb7b63e1b4391b1b5/README.md",
+      "verified_at": "2026-10-12T13:44:35.711551+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "whaleyxbt/claude-motion",
+      "repository": "whaleyxbt/claude-motion",
+      "url": "https://github.com/whaleyxbt/claude-motion",
+      "homepage": "",
+      "stars": 338,
+      "archived": false,
+      "pushed_at": "2026-10-09T19:45:22Z",
+      "default_branch": "main",
+      "commit_sha": "e627941543d9988b155dc610bb9cc0115a5e365e",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_url": "https://github.com/whaleyxbt/claude-motion/blob/e627941543d9988b155dc610bb9cc0115a5e365e/README.md",
+      "verified_at": "2026-10-12T13:44:49.435204+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test",
+      "readme_path": "README.md"
+    }
+  ],
+  "errors": []
+}
