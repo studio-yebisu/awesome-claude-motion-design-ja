@@ -15,28 +15,6 @@
     try { await navigator.clipboard.writeText(code.textContent.trim()); toast("コピーしました"); }
     catch { toast("コピーできませんでした。テキストを選択してコピーしてください。"); }
   });
-  const timeInput = $("#demo-time"), toggle = $("#demo-toggle"), output = $("#demo-output");
-  if (timeInput && toggle && window.MotionGuideDemo) {
-    const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
-    let playing = false, t = 1.8, frame = 0, last = 0;
-    const display = () => { window.MotionGuideDemo.seek(t); timeInput.value = String(t); if (output) output.textContent = `${t.toFixed(2)}s`; };
-    const label = () => { toggle.innerHTML = playing ? '動きを停止 <span aria-hidden="true">Ⅱ</span>' : '動きを再生 <span aria-hidden="true">▶</span>'; toggle.setAttribute("aria-pressed", String(playing)); };
-    function tick(now) {
-      if (!playing || document.hidden) return;
-      if (last) t = (t + Math.min((now - last) / 1000, .05)) % 6;
-      last = now; display(); frame = requestAnimationFrame(tick);
-    }
-    function setPlaying(value) {
-      playing = value; cancelAnimationFrame(frame); last = 0; label();
-      if (playing && !document.hidden) frame = requestAnimationFrame(tick);
-    }
-    toggle.addEventListener("click", () => setPlaying(!playing));
-    timeInput.addEventListener("input", () => { setPlaying(false); t = Number(timeInput.value); display(); });
-    document.addEventListener("visibilitychange", () => { cancelAnimationFrame(frame); last = 0; if (playing && !document.hidden) frame = requestAnimationFrame(tick); });
-    preference.addEventListener("change", e => { if (e.matches) setPlaying(false); });
-    display(); label();
-    // A visitor starts playback deliberately; reduced-motion users also begin still.
-  }
   const form = $("#catalog-filters");
   if (form) {
     const search = $("#catalog-search"), origin = $("#origin-filter"), license = $("#license-filter");

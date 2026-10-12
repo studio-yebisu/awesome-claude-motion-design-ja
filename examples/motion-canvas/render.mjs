@@ -1,0 +1,11 @@
+import {chromium} from '../runtime/node_modules/playwright/index.mjs';
+import fs from 'node:fs/promises';import path from 'node:path';import {spawnSync} from 'node:child_process';
+const out=path.resolve('../../.qa/renders/motion-canvas');await fs.mkdir(out,{recursive:true});
+const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
+const page=await browser.newPage({viewport:{width:960,height:600}});const errors=[];page.on('pageerror',e=>errors.push(String(e)));
+let count=0;
+await page.exposeFunction('__saveFrame',async({frame,png})=>{if(!Number.isInteger(frame)||frame<0||frame>1000)throw new Error('invalid frame');await fs.writeFile(path.join(out,`frame-${String(frame).padStart(4,'0')}.png`),Buffer.from(png.split(',')[1],'base64'));count++;});
+await page.goto(process.argv[2],{waitUntil:'networkidle'});await page.waitForFunction(()=>window.__startRender);
+await page.evaluate(()=>window.__startRender());await browser.close();if(errors.length)throw new Error(errors.join('\n'));if(count<240)throw new Error('Too few frames: '+count);
+const r=spawnSync('ffmpeg',['-y','-v','error','-framerate','30','-i',path.join(out,'frame-%04d.png'),'-frames:v','240','-c:v','libx264','-crf','20','-pix_fmt','yuv420p','-movflags','+faststart',path.join(out,'original.mp4')],{encoding:'utf8'});if(r.status)throw new Error(r.stderr);
+await fs.writeFile(path.join(out,'capture.json'),JSON.stringify({id:'motion-canvas',feature:'Motion Canvas Renderer, generator-based scene, Code morph + Rect signal tweens',renderedFrames:count,errors},null,2));console.log('Motion Canvas rendered '+count+' frames');

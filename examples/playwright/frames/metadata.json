@@ -1,0 +1,18 @@
+{
+  "source_scene": "gsap",
+  "capture_tool": "Playwright 1.64.0",
+  "browser": "Chrome 154.0.8037.99",
+  "fps": 30,
+  "frame_numbers": [
+    24,
+    60,
+    120,
+    189
+  ],
+  "times": [
+    0.8,
+    2.0,
+    4.0,
+    6.3
+  ]
+}

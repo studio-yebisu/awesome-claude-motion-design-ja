@@ -1,0 +1,1140 @@
+{
+  "produced_on": "2026-10-13",
+  "model_consulted": "claude-opus-5-5",
+  "previews": {
+    "remotion-skills": {
+      "id": "remotion-skills",
+      "title": "リリースノートを一本の映像に",
+      "role": "スキル適用",
+      "description": "公式スキルをOpus 5.5へ渡し、Sequenceの場面分割・マスク・springで制作。",
+      "source_file": "examples/remotion/src/ReleaseNotes.tsx",
+      "version": "Remotion 4.0.535",
+      "poster_time": 4.5,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/remotion-skills.mp4",
+          "bytes": 295194,
+          "sha256": "0914037a3ab4bed1a1fae1919c07d4ce16db17de1ec26c70a257a01fbb7e1a67"
+        },
+        "gif": {
+          "path": "assets/previews/remotion-skills.gif",
+          "bytes": 581733,
+          "sha256": "3f9e637565f6fb7e1f832911cb90fd2eafe5a9052aef266ac9334f637ffa394a"
+        },
+        "webp": {
+          "path": "assets/previews/remotion-skills.webp",
+          "bytes": 35432,
+          "sha256": "44ba58884991403f4e15a5b3f388bf302b2649813ca9e1e39c1060aaac3c8f76"
+        }
+      }
+    },
+    "remotion": {
+      "id": "remotion",
+      "title": "一つの構成から、三つの変化へ",
+      "role": "エンジン実行",
+      "description": "Reactのコンポーネントと入力値で、編集・ローンチ・製品の三つのデザインを切り替える。",
+      "source_file": "examples/remotion/src/VariantFilm.tsx",
+      "version": "Remotion 4.0.535 / React 19.2.3",
+      "poster_time": 4.5,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/remotion.mp4",
+          "bytes": 302995,
+          "sha256": "02691e69150a92207d27d36b336b1132b6abd90620bc22db19f7730ed8241a5b"
+        },
+        "gif": {
+          "path": "assets/previews/remotion.gif",
+          "bytes": 555866,
+          "sha256": "3ab351028da5d1fc0c7e97d747e7952790b1e2b222b166413fd90403339529bf"
+        },
+        "webp": {
+          "path": "assets/previews/remotion.webp",
+          "bytes": 25264,
+          "sha256": "f2482dc3e6ffa6c20df09eb7023078499890b3d62f969259368fbfb7ee65d844"
+        }
+      }
+    },
+    "motion-canvas": {
+      "id": "motion-canvas",
+      "title": "コードを書き換えると、リズムも変わる",
+      "role": "エンジン実行",
+      "description": "Codeノードの文字列モーフとRectのsignalを、generatorの時間軸で連動。実Rendererから241フレームを取得。",
+      "source_file": "examples/motion-canvas/src/scene.tsx",
+      "version": "Motion Canvas 3.17.2",
+      "poster_time": 4.5,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/motion-canvas.mp4",
+          "bytes": 35492,
+          "sha256": "a20f5e404812e71ae9dd51fc92115a8400256e18fd2bd2e25cf16a9fc4fbed01"
+        },
+        "gif": {
+          "path": "assets/previews/motion-canvas.gif",
+          "bytes": 87050,
+          "sha256": "0f32b2e22b506fe8060db55ae82aac834130deac8724ab721e8915082ddb645b"
+        },
+        "webp": {
+          "path": "assets/previews/motion-canvas.webp",
+          "bytes": 15068,
+          "sha256": "8a84335845b8568e232721d02668e4675f3052649b9be86cf455101c27854424"
+        }
+      },
+      "runtime_feature": "Motion Canvas Renderer, generator-based scene, Code morph + Rect signal tweens",
+      "processing_proof": null
+    },
+    "hyperframes": {
+      "id": "hyperframes",
+      "title": "HTMLをフレーム単位の動画へ",
+      "role": "エンジン実行",
+      "description": "data-*による尺・トラック宣言とpaused GSAP timeline。HyperFrames CLI自身でMP4を出力。",
+      "source_file": "examples/hyperframes/index.html",
+      "version": "HyperFrames 0.8.150",
+      "poster_time": 3.5,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/hyperframes.mp4",
+          "bytes": 119875,
+          "sha256": "116efa701d2b3d8cad730ead67aaa6ad7284b89b933236ae4b9e79bcd4d1a59e"
+        },
+        "gif": {
+          "path": "assets/previews/hyperframes.gif",
+          "bytes": 372328,
+          "sha256": "cab367c55f69c9b9ff4d7b05acab4ae26d5d8163ed50c221e55ac9ef34916b18"
+        },
+        "webp": {
+          "path": "assets/previews/hyperframes.webp",
+          "bytes": 16596,
+          "sha256": "4bf5af494fde00c998778590d2237c7f92595df58d8b9fe90a1dab9bc939806f"
+        }
+      }
+    },
+    "ffmpeg": {
+      "id": "ffmpeg",
+      "title": "数式だけで描く、流れる信号",
+      "role": "生成・エンコード",
+      "description": "入力映像なし。lavfi、geqの時刻付き数式、drawtextで直接生成しH.264へ。",
+      "source_file": "examples/ffmpeg/render_signal.py",
+      "version": "FFmpeg 8.1.2",
+      "poster_time": 4,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/ffmpeg.mp4",
+          "bytes": 275395,
+          "sha256": "548b26bb14930c52719b39c4e2db00374718c318ec7fafb9e16688702e18e298"
+        },
+        "gif": {
+          "path": "assets/previews/ffmpeg.gif",
+          "bytes": 3321903,
+          "sha256": "4347697a049be1f059f05d0774ea60754eb8105f7c1ec63b293f0e18361a3fee"
+        },
+        "webp": {
+          "path": "assets/previews/ffmpeg.webp",
+          "bytes": 17926,
+          "sha256": "8b86a21c9f7b529f85b12fde8e984c969e3bb3dd144861b6acabd68b05d7b640"
+        }
+      },
+      "runtime_feature": "lavfi, geq time expression, drawtext, H.264 encoding",
+      "processing_proof": null
+    },
+    "manim": {
+      "id": "manim",
+      "title": "円を重ねて、一筆の形を描く",
+      "role": "エンジン実行",
+      "description": "四つの周波数によるepicycle。ValueTracker・always_redraw・VMobjectを実Manimで描画。",
+      "source_file": "examples/manim/epicycles.py",
+      "version": "Manim Community 0.22.0",
+      "poster_time": 5.8,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/manim.mp4",
+          "bytes": 150500,
+          "sha256": "1bc4dfae3b9212eebb2738a5978887a7682b2f6fe13921ee4ac7b2acc8e23d6e"
+        },
+        "gif": {
+          "path": "assets/previews/manim.gif",
+          "bytes": 279193,
+          "sha256": "9933a94b18a65b7fdad93dab61c43b03838e982e9fcc546e122f36d711baffac"
+        },
+        "webp": {
+          "path": "assets/previews/manim.webp",
+          "bytes": 15726,
+          "sha256": "1c580e69fbe5abc30e6208a7888ba5e7e3a165f98ed7f11627a9f6e48b9d0c00"
+        }
+      }
+    },
+    "gsap": {
+      "id": "gsap",
+      "title": "活字棚から、言葉を組み上げる",
+      "role": "実ライブラリ・Opus実装",
+      "description": "SplitTextの文字・行分割とマスク、ラベル付きtimeline。組版→校正→活字を戻す流れ。",
+      "source_file": "examples/runtime/scenes/gsap.js",
+      "version": "GSAP 3.15.0",
+      "poster_time": 4,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/gsap.mp4",
+          "bytes": 186532,
+          "sha256": "d27d8db4ab4f2e6bc3ea9a847d5be45a20cf4830608199357b99cab4a98c2ef3"
+        },
+        "gif": {
+          "path": "assets/previews/gsap.gif",
+          "bytes": 419911,
+          "sha256": "638b1969c4630d82d7ff0d86ecb929946c0a7cfef7b1fefc8da4edc34136c52e"
+        },
+        "webp": {
+          "path": "assets/previews/gsap.webp",
+          "bytes": 25094,
+          "sha256": "61ce2707b780ffdb8b75380206aa319d399b72401509917b1c647ca7bb1ed28b"
+        }
+      },
+      "runtime_feature": "gsap.timeline labels + timeline.seek(frame / 30); SplitText.create words/chars, and lines with mask: lines; function-based values; stagger { each, from: end }",
+      "processing_proof": null
+    },
+    "three": {
+      "id": "three",
+      "title": "360本の柱が、31の形になる",
+      "role": "実ライブラリ・Opus実装",
+      "description": "InstancedMesh、物理材質、RoomEnvironment、影。波→文字形→波、固定方向のドリー。",
+      "source_file": "examples/runtime/scenes/three.js",
+      "version": "Three.js 0.186.1",
+      "poster_time": 4,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/three.mp4",
+          "bytes": 519065,
+          "sha256": "3abd843595c7aa1f0964c11683e1018ebe1921ca9e8b37c0f8988e831c3c7ad6"
+        },
+        "gif": {
+          "path": "assets/previews/three.gif",
+          "bytes": 2185814,
+          "sha256": "9d75092b6dd28467f554f7cc8925ae3769e0dbcff9762c82ef24b05b3d3822f0"
+        },
+        "webp": {
+          "path": "assets/previews/three.webp",
+          "bytes": 34220,
+          "sha256": "bdfbca99219835d7597d0c2aa9322446c4cb625890bbefd2be5853ad716dae23"
+        }
+      },
+      "runtime_feature": "InstancedMesh (360) with per-instance matrix and color; MeshPhysicalMaterial clearcoat; RoomEnvironment via PMREMGenerator; NeutralToneMapping; PCF shadows; canvas-path glyph mask; dolly-only PerspectiveCamera",
+      "processing_proof": null
+    },
+    "twgl": {
+      "id": "twgl",
+      "title": "GLSLが描く、有機的な帯",
+      "role": "実ライブラリ",
+      "description": "実Shaderとquad bufferをTWGLで接続。時刻uniformが色・流れ・輪郭を作る。",
+      "source_file": "examples/runtime/scenes/twgl.js",
+      "version": "TWGL.js 7.0.0",
+      "poster_time": 4,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/twgl.mp4",
+          "bytes": 594769,
+          "sha256": "8939fc2aaffaed89f37667adbe4161a27d1d0e7c9765428950b44ec09174630f"
+        },
+        "gif": {
+          "path": "assets/previews/twgl.gif",
+          "bytes": 3439847,
+          "sha256": "f19b5c28d2f9655453fcbc52358ca0e47cf08b583b3f820f7185d974e5bdd680"
+        },
+        "webp": {
+          "path": "assets/previews/twgl.webp",
+          "bytes": 28318,
+          "sha256": "8d30e69f088ba0dc02733de9a3155fe6f4c1aa4c66dd619e143cf23ffc8b566c"
+        }
+      },
+      "runtime_feature": "createProgramInfo, shader uniforms, WebGL drawBufferInfo",
+      "processing_proof": null
+    },
+    "cobe": {
+      "id": "cobe",
+      "title": "小さな地球で、拠点をつなぐ",
+      "role": "実ライブラリ",
+      "description": "東京・ロンドン・ニューヨークのマーカーを持つ点描地球。phiを周期的に更新して描画。",
+      "source_file": "examples/runtime/scenes/cobe.js",
+      "version": "Cobe 2.0.1",
+      "poster_time": 2,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/cobe.mp4",
+          "bytes": 942076,
+          "sha256": "58fe641b884287182a3261490d58624a4cb28ad53d57989fe1b551f43723ffd3"
+        },
+        "gif": {
+          "path": "assets/previews/cobe.gif",
+          "bytes": 1405235,
+          "sha256": "fbf771563db457d28c7f2006d2d4ef4a9fe5d0a148aa27efdf3d12cd994051bf"
+        },
+        "webp": {
+          "path": "assets/previews/cobe.webp",
+          "bytes": 32762,
+          "sha256": "a21f099be1c9d593c59f854700dcb0197f539cc3a2f795b474a8e27c55007054"
+        }
+      },
+      "runtime_feature": "createGlobe, geographic markers, phi updates",
+      "processing_proof": null
+    },
+    "d3": {
+      "id": "d3",
+      "title": "同じ階層を、別の形へ",
+      "role": "実ライブラリ・架空データ",
+      "description": "同じ値をtreemapからpartitionのicicleへ変換。データ結合と補間で関係を保つ。",
+      "source_file": "examples/runtime/scenes/d3.js",
+      "version": "D3 7.9.0",
+      "poster_time": 4,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/d3.mp4",
+          "bytes": 237604,
+          "sha256": "5e19f7708307853548d6ccd7efc1f46ca711bf10e8353b9ef442e4b373ca78b2"
+        },
+        "gif": {
+          "path": "assets/previews/d3.gif",
+          "bytes": 888930,
+          "sha256": "92cf89e1f85f751a07ef03b20cad445e0901fd7d86f9e360a0e4b055fdc3aca1"
+        },
+        "webp": {
+          "path": "assets/previews/d3.webp",
+          "bytes": 28922,
+          "sha256": "7e522e95598f39dad8050cd1636a1bcf8fe9314360375e9ce0f439cfa0fcd4a0"
+        }
+      },
+      "runtime_feature": "hierarchy, treemap, partition, scaleOrdinal, easeCubicInOut, selection joins",
+      "processing_proof": null
+    },
+    "anime": {
+      "id": "anime",
+      "title": "線から秩序へ、形から流れへ",
+      "role": "実ライブラリ",
+      "description": "svg.createDrawableの線描画と、中心から広がるstagger gridを組み合わせた幾何学作品。",
+      "source_file": "examples/runtime/scenes/anime.js",
+      "version": "Anime.js 4.5.0",
+      "poster_time": 4,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/anime.mp4",
+          "bytes": 114438,
+          "sha256": "5c2485d9f7c20303b56d377573e24fc33e43c66d3f4fce902053bebdf337c1b8"
+        },
+        "gif": {
+          "path": "assets/previews/anime.gif",
+          "bytes": 318748,
+          "sha256": "aafe5941f4be471da7d82b31b7edaccb11b0c1c20f97519e1a67ca6635917fa8"
+        },
+        "webp": {
+          "path": "assets/previews/anime.webp",
+          "bytes": 20544,
+          "sha256": "6fa79da2154bd104de62d49899f257d7918e8ec3e957189c0e4c569a586f4c57"
+        }
+      },
+      "runtime_feature": "createTimeline, svg.createDrawable, center-grid stagger, seek",
+      "processing_proof": null
+    },
+    "fabric": {
+      "id": "fabric",
+      "title": "動かしても、部品のまま編集できる",
+      "role": "実ライブラリ",
+      "description": "図形と文字をGroup化。選択枠を表示したまま変形し、実際にtoSVGを書き出す。",
+      "source_file": "examples/runtime/scenes/fabric.js",
+      "version": "Fabric.js 7.4.0",
+      "poster_time": 4,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/fabric.mp4",
+          "bytes": 254071,
+          "sha256": "2c45ae96ab3d2572dcf795e5583bcd2fe31cec1504cf3b655f4f46c016d72eb9"
+        },
+        "gif": {
+          "path": "assets/previews/fabric.gif",
+          "bytes": 956048,
+          "sha256": "6dd0b8f81856572230f6a6d3f14affbf1f27397b2a8d727987e34f0de43775d7"
+        },
+        "webp": {
+          "path": "assets/previews/fabric.webp",
+          "bytes": 18970,
+          "sha256": "07cbb4543e0904d5964359bec1db7574d01f193efbfe09c7d51a672073841ac7"
+        }
+      },
+      "runtime_feature": "Canvas, Group, editable selection controls, object transformations, toSVG",
+      "processing_proof": null
+    },
+    "lottie": {
+      "id": "lottie",
+      "title": "一つのJSON、二つの描画面",
+      "role": "実ライブラリ・独自素材",
+      "description": "自作ベクターJSONをSVGとCanvasの両レンダラーで並べ、goToAndStopで同じフレームへ。",
+      "source_file": "examples/runtime/scenes/lottie.js",
+      "version": "Lottie Web 5.13.0",
+      "poster_time": 4,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/lottie.mp4",
+          "bytes": 248928,
+          "sha256": "36ae7a5e9925f55c2f57407ff5aabdfce334db42a061bc8ab3234f618ff083dc"
+        },
+        "gif": {
+          "path": "assets/previews/lottie.gif",
+          "bytes": 910528,
+          "sha256": "4f968923f664f1c8842bdf9ba5f0a2aada9428eae0905e75e33d916440bfd50e"
+        },
+        "webp": {
+          "path": "assets/previews/lottie.webp",
+          "bytes": 26294,
+          "sha256": "22bfe7dcf75fc8d7978bff1c56f323b6e08f8b614e62a2c5922894ef88e5d15c"
+        }
+      },
+      "runtime_feature": "loadAnimation, original vector JSON, SVG and Canvas renderers, goToAndStop",
+      "processing_proof": null
+    },
+    "pixi": {
+      "id": "pixi",
+      "title": "散らばった粒が、FORMに集まる",
+      "role": "実ライブラリ",
+      "description": "GPU描画のSprite、Container、ColorMatrixFilter。文字のマスクへ粒を集めて解く。",
+      "source_file": "examples/runtime/scenes/pixi.js",
+      "version": "PixiJS 8.22.0",
+      "poster_time": 4,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/pixi.mp4",
+          "bytes": 1240248,
+          "sha256": "c96d4ba3874f47ad8af9e0352f19aa213567c6b8e3fe176a032faf0fe0ed6e95"
+        },
+        "gif": {
+          "path": "assets/previews/pixi.gif",
+          "bytes": 1330595,
+          "sha256": "f2050fb97459ffd54b9b5349fc121eb74bf10faffdadbc2d138ac3abac030b38"
+        },
+        "webp": {
+          "path": "assets/previews/pixi.webp",
+          "bytes": 33662,
+          "sha256": "ec9f8cf28afa0d2d90ff71467901ae44a2a717355ad73fc8b18d3726a3a85d47"
+        }
+      },
+      "runtime_feature": "Application, Sprite textures, Container, GPU ColorMatrixFilter, manual render",
+      "processing_proof": null
+    },
+    "motion": {
+      "id": "motion",
+      "title": "ひとつの操作で、カードが展開する",
+      "role": "実ライブラリ",
+      "description": "animateのsequenceとstaggerを使い、カードの展開から戻りまでを時刻指定で再生。",
+      "source_file": "examples/runtime/scenes/motion.js",
+      "version": "Motion 14.1.0",
+      "poster_time": 4,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/motion.mp4",
+          "bytes": 83632,
+          "sha256": "d3ce258e940bc6b1183451eff92d8f9a94cf0a7e03548fbfa4ba14969a4713c3"
+        },
+        "gif": {
+          "path": "assets/previews/motion.gif",
+          "bytes": 217110,
+          "sha256": "32790b36719b7293c35c68e256abba091d5d06219dc4ff04d3d31e4b94219c85"
+        },
+        "webp": {
+          "path": "assets/previews/motion.webp",
+          "bytes": 20136,
+          "sha256": "c6dee1ca5385db146b4cb12c60f6c9d01fd39d98f2979d1f84598b6d1a03f751"
+        }
+      },
+      "runtime_feature": "animate sequence, motion playback time, stagger, layout dimensions and easing",
+      "processing_proof": null
+    },
+    "fiber": {
+      "id": "fiber",
+      "title": "Reactの部品で、均衡する立体を",
+      "role": "実ライブラリ",
+      "description": "宣言的なメッシュ、useFrame、frameloop=neverとadvanceで、三重リングと中心の立体を描画。",
+      "source_file": "examples/runtime/scenes/fiber.js",
+      "version": "Fiber 9.8.1 / React 19.3.0",
+      "poster_time": 4,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/fiber.mp4",
+          "bytes": 332554,
+          "sha256": "10057a58060afb6f66f2609193fecc0e9aec4eb7412b8ffe7b1d29e300d6518a"
+        },
+        "gif": {
+          "path": "assets/previews/fiber.gif",
+          "bytes": 871793,
+          "sha256": "485067067090469e8788319a03f02e247ccfdcf3261fd1be19dfb303c34901d5"
+        },
+        "webp": {
+          "path": "assets/previews/fiber.webp",
+          "bytes": 19480,
+          "sha256": "c86ee42c5ec29f46ddea71167b089d945881ad9db7389e3bfc8a30cf73dedbb4"
+        }
+      },
+      "runtime_feature": "React reconciler, declarative meshes, useFrame, frameloop=never, manual advance",
+      "processing_proof": null
+    },
+    "drei": {
+      "id": "drei",
+      "title": "丸い角と、柔らかな接地感",
+      "role": "実ライブラリ",
+      "description": "RoundedBox、Center、Edges、ContactShadowsを使った、立体オブジェクトのスタジオ作例。",
+      "source_file": "examples/runtime/scenes/drei.js",
+      "version": "Drei 10.7.9 / Fiber 9.8.1",
+      "poster_time": 4,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/drei.mp4",
+          "bytes": 115670,
+          "sha256": "8df212b27eb6a07bbb484a7a23a3a879054af0b7a4ae20c02e146ea4743bfdfd"
+        },
+        "gif": {
+          "path": "assets/previews/drei.gif",
+          "bytes": 636687,
+          "sha256": "5297a0024a1dd59c38af9391b4d891272b61b746c360ad4cfc6be7ac95288b42"
+        },
+        "webp": {
+          "path": "assets/previews/drei.webp",
+          "bytes": 12750,
+          "sha256": "1517f9a3cc710206d1e8220d6d926ed0d84cfba002fd6109d09feb93e88a3c4b"
+        }
+      },
+      "runtime_feature": "RoundedBox, Center, Edges, ContactShadows; Fiber manual frames",
+      "processing_proof": null
+    },
+    "deck": {
+      "id": "deck",
+      "title": "5,000点から、街の脈動を見る",
+      "role": "実ライブラリ・架空データ",
+      "description": "HexagonLayerが点を実集計。立体密度とArcLayerの経路を表示。データは独自の例示。",
+      "source_file": "examples/runtime/scenes/deck.js",
+      "version": "deck.gl 9.4.0",
+      "poster_time": 4,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/deck.mp4",
+          "bytes": 646148,
+          "sha256": "d512d31c83cd1beec09803e6f4e4f2718120ce076472c4770b4e037fdc68d1cc"
+        },
+        "gif": {
+          "path": "assets/previews/deck.gif",
+          "bytes": 1362661,
+          "sha256": "ffdf7ca1fd364d0b57f7f39ff31a56e8e5fbbb2aeba17100de0eb84491e16b3c"
+        },
+        "webp": {
+          "path": "assets/previews/deck.webp",
+          "bytes": 38330,
+          "sha256": "0b05cd0af6ccd22da951f1ff51008ec6bc1c6fb6e7103e5775d8b3c2f0c9ea47"
+        }
+      },
+      "runtime_feature": "HexagonLayer aggregation + ArcLayer, synthetic geospatial data, dynamic elevationScale",
+      "processing_proof": null
+    },
+    "confetti": {
+      "id": "confetti",
+      "title": "完成の瞬間に、小さな祝福を",
+      "role": "実ライブラリ",
+      "description": "canvas-confettiの実物理、独自のひし形、固定乱数。仮想60Hzで粒子を進めて取得。",
+      "source_file": "examples/runtime/scenes/confetti.js",
+      "version": "canvas-confetti 1.9.4",
+      "poster_time": 2.2,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/confetti.mp4",
+          "bytes": 142652,
+          "sha256": "4da0c9d3ef612b5a0241442190c3b4edf9e82630440d6d79b0d9ede78cf906d4"
+        },
+        "gif": {
+          "path": "assets/previews/confetti.gif",
+          "bytes": 335016,
+          "sha256": "f2794fffbc85b4a8051e275722e38e64db0e70a3db40863097862b27fc8c6645"
+        },
+        "webp": {
+          "path": "assets/previews/confetti.webp",
+          "bytes": 13220,
+          "sha256": "2d3464b01cdff956dd119c3f1d6929fb8796b72951806365a3717042fd0a5001"
+        }
+      },
+      "runtime_feature": "Real particle physics, custom path shape, seeded random + virtual 60Hz RAF capture",
+      "processing_proof": null
+    },
+    "rive": {
+      "id": "rive",
+      "title": "ボタンの状態を、時間で操る",
+      "role": "再生ランタイム・公式素材",
+      "description": "Advanced Canvas WASMでPressアニメーションを時間指定。rocket.rivはRive公式MITテスト素材で、素材の自作ではありません。",
+      "source_file": "examples/runtime/scenes/rive.js",
+      "version": "Rive Canvas Advanced 2.44.2",
+      "poster_time": 4,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/rive.mp4",
+          "bytes": 62252,
+          "sha256": "928a50f004738ded366ea187aa08c013c88a1d4552a2bade76b4f8a944fcee9b"
+        },
+        "gif": {
+          "path": "assets/previews/rive.gif",
+          "bytes": 167749,
+          "sha256": "f76a8f9a72d298a168a7584c9b528e302b8d46a56be77c488b93c481dca5fa0c"
+        },
+        "webp": {
+          "path": "assets/previews/rive.webp",
+          "bytes": 12384,
+          "sha256": "35b7ef490f38fadff7d9fc025c4f335f15104352b34fe849b4d6e039388e5318"
+        }
+      },
+      "runtime_feature": "Advanced Canvas WASM runtime, LinearAnimationInstance Press time/advance/apply; upstream rocket.riv (idle, Roll_over, Press)",
+      "processing_proof": null
+    },
+    "motion-skill": {
+      "id": "motion-skill",
+      "title": "レンズが光を一つに集める",
+      "role": "スキル適用・専用描画",
+      "description": "原文・style・元テンプレートを参照し、オリジナルのレンズ場面を専用render.mjsで書き出した。",
+      "source_file": "examples/motion-skill/scene.js",
+      "version": "Pinned /motion renderer + Canvas",
+      "poster_time": 5.8,
+      "status": "rendered_and_packaged",
+      "duration": 12.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 360,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/motion-skill.mp4",
+          "bytes": 520645,
+          "sha256": "63c94a07052e72067eb45c8e5c4d22fce2181ce1036bce0a57c6aeeb62b21b75"
+        },
+        "gif": {
+          "path": "assets/previews/motion-skill.gif",
+          "bytes": 2398456,
+          "sha256": "998953a552676d17d5870b1936f318258cead3c3f8cdb7cd1d7170d650d52db5"
+        },
+        "webp": {
+          "path": "assets/previews/motion-skill.webp",
+          "bytes": 15116,
+          "sha256": "a3118de8b88ce90c1060805bd4034470142eb7129b2845f222dbe4842fc897d0"
+        }
+      }
+    },
+    "mediabunny": {
+      "id": "mediabunny",
+      "title": "Canvasから、本物の動画ファイルへ",
+      "role": "ブラウザ内エンコード",
+      "description": "CanvasSourceで240枚をVP9/WebMへエンコード。Inputで8秒とcodecを読み戻し、そのファイルを再生。",
+      "source_file": "examples/runtime/scenes/mediabunny.js",
+      "version": "Mediabunny 1.61.3",
+      "poster_time": 4,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/mediabunny.mp4",
+          "bytes": 152663,
+          "sha256": "2b24fbbb0583fd30b345b6e9e0bf46ec0a9e9d59f372a8db7cf0f6bb481d42d2"
+        },
+        "gif": {
+          "path": "assets/previews/mediabunny.gif",
+          "bytes": 898751,
+          "sha256": "dd17dfe0a1efe46148fb40abbf70c56c35bffd4f704df0cf8030cd2c73807af8"
+        },
+        "webp": {
+          "path": "assets/previews/mediabunny.webp",
+          "bytes": 19578,
+          "sha256": "b931ea9372ab2777f6ef766cc45d05eb5c430b6a962df0f95c557136bc305a00"
+        }
+      },
+      "runtime_feature": "CanvasSource real VP9 encoding, BufferTarget/WebM mux, Input duration/track readback, rendered output playback",
+      "processing_proof": {
+        "codec": "vp9",
+        "duration": 8,
+        "bytes": 943343,
+        "frames": 240,
+        "encoder": "WebCodecs via Mediabunny CanvasSource",
+        "readback": true
+      },
+      "native_output": {
+        "path": "assets/previews/mediabunny-native.webm",
+        "bytes": 943343
+      }
+    },
+    "ffmpeg-wasm": {
+      "id": "ffmpeg-wasm",
+      "title": "ブラウザで色とサイズを変換",
+      "role": "処理結果・比較",
+      "description": "左が独自FFmpeg映像、右がWASMのexecでhueとscaleを実行した実出力。入力と変換結果を同時に再生。",
+      "source_file": "examples/runtime/scenes/ffmpeg-wasm.js",
+      "version": "ffmpeg 0.12.15 / core 0.12.10",
+      "poster_time": 4,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/ffmpeg-wasm.mp4",
+          "bytes": 255323,
+          "sha256": "18e506bc5a347be16224372ce34e9c1118fe8a5ce6848c0c35d46a3d49b50839"
+        },
+        "gif": {
+          "path": "assets/previews/ffmpeg-wasm.gif",
+          "bytes": 1716690,
+          "sha256": "ef911df4c0fe305525722adcc3f2440a31257fb35545e50b4862d7e8aec802af"
+        },
+        "webp": {
+          "path": "assets/previews/ffmpeg-wasm.webp",
+          "bytes": 29052,
+          "sha256": "09ad510e9eb20a9f01ec90a19d99144f1bb919d58a2b5213307f0d6ac911da03"
+        }
+      },
+      "runtime_feature": "Real WASM load/writeFile/exec/readFile; original procedural input, hue + scale + H.264 transcode; before/after playback",
+      "processing_proof": {
+        "engine": "@ffmpeg/core 0.12.10 (WASM)",
+        "command": [
+          "-i",
+          "source.mp4",
+          "-vf",
+          "hue=h=105:s=.8,scale=420:262",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "ultrafast",
+          "-crf",
+          "21",
+          "-an",
+          "result.mp4"
+        ],
+        "exit": 0,
+        "inputBytes": 329831,
+        "outputBytes": 539887
+      },
+      "native_output": {
+        "path": "assets/previews/ffmpeg-wasm-native.mp4",
+        "bytes": 539887
+      }
+    },
+    "playwright": {
+      "id": "playwright",
+      "title": "指定した瞬間を、そのまま残す",
+      "role": "フレーム取得",
+      "description": "GSAP作品を実際にseekして取得した4枚から、時刻付きフィルムストリップを制作。Playwrightは取得担当。",
+      "source_file": "examples/runtime/scenes/playwright.js",
+      "version": "Playwright 1.64.0 / Chrome 154",
+      "poster_time": 4.2,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/playwright.mp4",
+          "bytes": 58211,
+          "sha256": "8d5e3bc463dd5b7825e8672589ea1812b442e02288ec88026ced73cfca6406d9"
+        },
+        "gif": {
+          "path": "assets/previews/playwright.gif",
+          "bytes": 128922,
+          "sha256": "3e3146e4973b3b8451822ed349f5ce5d0a5be380b070dec929c2dc4e5e5eddb2"
+        },
+        "webp": {
+          "path": "assets/previews/playwright.webp",
+          "bytes": 32050,
+          "sha256": "85ffa95503e46fe9efc97ecd8ed834527ba761ed65188cf8f1a3a519ae2ed8d7"
+        }
+      },
+      "runtime_feature": "Four real screenshots of seek(frame), composed as a clocked filmstrip; capture automation role",
+      "processing_proof": {
+        "capture_tool": "Playwright 1.64.0",
+        "source": "original GSAP specimen",
+        "actualSourceFrames": [
+          24,
+          60,
+          120,
+          189
+        ],
+        "times": [
+          0.8,
+          2,
+          4,
+          6.3
+        ]
+      }
+    },
+    "iart-motion-skills": {
+      "id": "iart-motion-skills",
+      "title": "一行ずつ、考えが立ち上がる",
+      "role": "個別パック適用",
+      "description": "索引からkinetic-typographyを選び、行マスク、80ms差、ease-out、アクセシビリティ規則を適用。",
+      "source_file": "examples/kinetic-typography/index.html",
+      "version": "iart kinetic-typography 0.1.0",
+      "poster_time": 3,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/iart-motion-skills.mp4",
+          "bytes": 65634,
+          "sha256": "e4cc8c0d0e9fafeef6a2aeffab543b2e3fdd85662afb8a3b4fad4e4d39dc62ed"
+        },
+        "gif": {
+          "path": "assets/previews/iart-motion-skills.gif",
+          "bytes": 169390,
+          "sha256": "e19d504d05bf3a6c41990e9c6bbdbe8487c75167e34ad30f23a37d939c779e53"
+        },
+        "webp": {
+          "path": "assets/previews/iart-motion-skills.webp",
+          "bytes": 17210,
+          "sha256": "562876fc6bbbeb214c3a72bb653a4929d993a932349927976983824dc43090b8"
+        }
+      },
+      "runtime_feature": "Actual pack applied: line mask, 80ms stagger, 480ms ease-out reveal, aria labels, reduced motion, standalone time freeze",
+      "processing_proof": null
+    },
+    "opus-video-prompts": {
+      "id": "opus-video-prompts",
+      "title": "一つの線から、時間を持つ映像へ",
+      "role": "資料の方法を適用",
+      "description": "公開事例集の「構成表→seek(t)→フレーム描画」という方法を適用した独自作品。資料自体はエンジンではない。",
+      "source_file": "examples/runtime/scenes/opus-video-prompts.js",
+      "version": "Original Canvas method study",
+      "poster_time": 4.2,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/opus-video-prompts.mp4",
+          "bytes": 131216,
+          "sha256": "ff7fd73a0a13187706e2308aafdc4bb15baf02475ec8a33aebdd3c17c51ee29c"
+        },
+        "gif": {
+          "path": "assets/previews/opus-video-prompts.gif",
+          "bytes": 523162,
+          "sha256": "ee71833f0eff9423659e720cd18152174bd1d61efa8eeb257dd3c777fa5304db"
+        },
+        "webp": {
+          "path": "assets/previews/opus-video-prompts.webp",
+          "bytes": 20970,
+          "sha256": "d391173db99e76cafa302864ae1e0169c8359f343d0f8ef87e8b2b760d7d09d2"
+        }
+      },
+      "runtime_feature": "Original Canvas film inspired by the reference collection: explicit beat map, seek(time), persistent visual, coded render; reference is not an engine",
+      "processing_proof": null
+    },
+    "emil-skills": {
+      "id": "emil-skills",
+      "title": "押し直してもつながるUI",
+      "role": "スキル適用",
+      "description": "Emilの設計・レビュー規則を適用。短い応答、起点、割り込み時の動きを確認。",
+      "source_file": "examples/runtime/scenes/emil-skills.js",
+      "version": "スキル原文 + ブラウザ実装",
+      "poster_time": 3.8,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/emil-skills.mp4",
+          "bytes": 77827,
+          "sha256": "1db02ee30540cebf0db6bd2a03bc7700f4107e2d35e174a34effb350a60ef260"
+        },
+        "gif": {
+          "path": "assets/previews/emil-skills.gif",
+          "bytes": 176537,
+          "sha256": "5ab93e8c8150635b9039c69c8ad0406affbf5c3c980cb8fcfb09da4aa4c1556c"
+        },
+        "webp": {
+          "path": "assets/previews/emil-skills.webp",
+          "bytes": 22984,
+          "sha256": "3037d7a7c566cd90b6f89e31ccee1ba90c63e25e4b5c25f7f20d8b6668ef592b"
+        }
+      },
+      "runtime_feature": "Skill applied: trigger origin, transform/opacity, closed-form retargeted spring preserving velocity, <300ms response, reduced motion, labelled quarter-speed review",
+      "processing_proof": null
+    },
+    "motion-graphics-skills": {
+      "id": "motion-graphics-skills",
+      "title": "小さな製品のローンチ映像",
+      "role": "スキル適用",
+      "description": "選択した制作スキルをOpusへ渡して制作した、架空製品の紹介。",
+      "source_file": "examples/runtime/scenes/motion-graphics-skills.js",
+      "version": "Charlie947 skill + Canvas",
+      "poster_time": 4,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/motion-graphics-skills.mp4",
+          "bytes": 350932,
+          "sha256": "db54ca8f86f313dd237622fbb3ade5fcaa1e2c4b5c3971c2bad5b6760c9ed925"
+        },
+        "gif": {
+          "path": "assets/previews/motion-graphics-skills.gif",
+          "bytes": 909596,
+          "sha256": "bd0fbab1023669e198beef840b967b5fe994e1f83f7b4ed83cfad0419625a902"
+        },
+        "webp": {
+          "path": "assets/previews/motion-graphics-skills.webp",
+          "bytes": 14554,
+          "sha256": "93efafc0094722b05a7c38b66e1bf5bc3ed318dd6f1820f75e7e4acd19a9a00c"
+        }
+      },
+      "runtime_feature": "SONORA (EXAMPLE): island widget, gradient wallpapers, detail to reveal to family",
+      "processing_proof": null
+    },
+    "claude-motion": {
+      "id": "claude-motion",
+      "title": "編集から再生へ、ビートをつなぐ",
+      "role": "スキル適用・音声",
+      "description": "Whaleyのmotion-designとsound-designを適用。共通の時間表で映像と自作SFXを同期。",
+      "source_file": "examples/remotion/src/WhaleyFilm.tsx",
+      "version": "Remotion 4.0.535 + Python SFX",
+      "poster_time": 4,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": true,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/claude-motion.mp4",
+          "bytes": 1050724,
+          "sha256": "a96fa2928b492a279a3e6b6508357e7bc86aeea7bdfeac136bcd5be9831f4606"
+        },
+        "gif": {
+          "path": "assets/previews/claude-motion.gif",
+          "bytes": 4102871,
+          "sha256": "185320eb894306ca6fd69ddf4a2ca26cfe8cf0db2201396165d9e9fe5eac85ff"
+        },
+        "webp": {
+          "path": "assets/previews/claude-motion.webp",
+          "bytes": 24010,
+          "sha256": "9890b31bb1703f0e834371dbcc61b79ba3e5d18ee7d708cc98c0d7c064731132"
+        }
+      }
+    },
+    "claude-motion-design": {
+      "id": "claude-motion-design",
+      "title": "ボタンから画面へ、形を引き継ぐ",
+      "role": "スキル適用",
+      "description": "Howseenのseek(t)方式、共有要素の受け渡し、ビート設計を適用。",
+      "source_file": "examples/runtime/scenes/claude-motion-design.js",
+      "version": "Howseen skill + HTML engine",
+      "poster_time": 4,
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/claude-motion-design.mp4",
+          "bytes": 134575,
+          "sha256": "ac152cfd7a1ab7f5bb8044244e4c7d8e3a7966ab16b4806cdb81279e6c95eccf"
+        },
+        "gif": {
+          "path": "assets/previews/claude-motion-design.gif",
+          "bytes": 269787,
+          "sha256": "f66519784b86dcc7336ee199dd1f230a29e94900e1ef738cacdbdd8570caf5c0"
+        },
+        "webp": {
+          "path": "assets/previews/claude-motion-design.webp",
+          "bytes": 13510,
+          "sha256": "25137fd562cb75bd40ed29eb31fe096222c36f5bba19423ad5712661f619f132"
+        }
+      },
+      "runtime_feature": "seek(t) engine, shared-element floods, 120 BPM beatmap",
+      "processing_proof": null
+    }
+  },
+  "consultation": {
+    "model": "claude-opus-5-5",
+    "confirmed_by": "Claude CLI modelUsage for three completed calls",
+    "contributions": [
+      "全31項目の制作方針と作例設計",
+      "GSAP・Three.js・Remotion ReleaseNotesのコード原案",
+      "スキル原文を入力したWhaley・Howseenのコード原案とCharlieのコード断片",
+      "Emilを含む4スキルの適用規則と時間構成"
+    ],
+    "integration": "Codexがコードの補完・追加実装・修正・実描画・書き出し・サイト統合を担当"
+  },
+  "runtime_scope": "専用作例の実行。全機能・全パック・モデル間性能の検証ではない。"
+}

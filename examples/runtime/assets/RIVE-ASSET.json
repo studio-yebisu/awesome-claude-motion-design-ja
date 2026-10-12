@@ -1,0 +1,8 @@
+{
+  "asset": "rocket.riv",
+  "author": "Rive",
+  "role": "Official upstream test asset; playback demo, not an original .riv animation",
+  "license": "MIT",
+  "source": "https://github.com/rive-app/rive-runtime/blob/daf55385b71fb861b2a1ae2930ae4492832d5db5/tests/unit_tests/assets/rocket.riv",
+  "commit": "daf55385b71fb861b2a1ae2930ae4492832d5db5"
+}

@@ -1,0 +1,10 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="icon" href="data:,"></head><body style="margin:0;background:#0e0f12"><script type="module">
+import project from '/src/project.ts?project';
+import {Renderer,Vector2} from '@motion-canvas/core';
+const renderer=new Renderer(project);
+document.body.append(renderer.stage.finalBuffer);
+window.__startRender=async()=>{
+ await renderer.render({name:'specimen',size:new Vector2(960,600),resolutionScale:1,colorSpace:'srgb',background:'#0e0f12',range:[0,8],fps:30,exporter:{name:'specimen/png',options:{}}});
+ if(window.__renderResult!==0)throw new Error('Motion Canvas Renderer did not report success: '+window.__renderResult);
+};
+</script></body></html>

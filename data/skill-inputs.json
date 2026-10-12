@@ -1,0 +1,65 @@
+[
+  {
+    "preview_id": "remotion-skills",
+    "repository": "remotion-dev/skills",
+    "path": "skills/remotion-markup/SKILL.md",
+    "commit": "7ba4dcf8ebe1626b00baa41e1f2478113719b60b",
+    "source_url": "https://github.com/remotion-dev/skills/blob/7ba4dcf8ebe1626b00baa41e1f2478113719b60b/skills/remotion-markup/SKILL.md"
+  },
+  {
+    "preview_id": "emil-skills",
+    "repository": "emilkowalski/skills",
+    "path": "skills/emil-design-eng/SKILL.md",
+    "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+    "source_url": "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/emil-design-eng/SKILL.md"
+  },
+  {
+    "preview_id": "emil-skills",
+    "repository": "emilkowalski/skills",
+    "path": "skills/review-animations/SKILL.md",
+    "commit": "2d228630ba1446365f614a108cb8252f1feda202",
+    "source_url": "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/review-animations/SKILL.md"
+  },
+  {
+    "preview_id": "motion-graphics-skills",
+    "repository": "charlie947/motion-graphics-skills",
+    "path": "skills/apple-launch-film/SKILL.md",
+    "commit": "229022ebca76972e119e36ada23a1648d51665ab",
+    "source_url": "https://github.com/charlie947/motion-graphics-skills/blob/229022ebca76972e119e36ada23a1648d51665ab/skills/apple-launch-film/SKILL.md"
+  },
+  {
+    "preview_id": "claude-motion",
+    "repository": "whaleyxbt/claude-motion",
+    "path": ".claude/skills/motion-design/SKILL.md",
+    "commit": "e627941543d9988b155dc610bb9cc0115a5e365e",
+    "source_url": "https://github.com/whaleyxbt/claude-motion/blob/e627941543d9988b155dc610bb9cc0115a5e365e/.claude/skills/motion-design/SKILL.md"
+  },
+  {
+    "preview_id": "claude-motion",
+    "repository": "whaleyxbt/claude-motion",
+    "path": ".claude/skills/sound-design/SKILL.md",
+    "commit": "e627941543d9988b155dc610bb9cc0115a5e365e",
+    "source_url": "https://github.com/whaleyxbt/claude-motion/blob/e627941543d9988b155dc610bb9cc0115a5e365e/.claude/skills/sound-design/SKILL.md"
+  },
+  {
+    "preview_id": "claude-motion-design",
+    "repository": "howseen-ai/claude-motion-design",
+    "path": "skill/motion-design/SKILL.md",
+    "commit": "3d90d349ef3fdde9b7e89de4df4a2159c9e8697f",
+    "source_url": "https://github.com/howseen-ai/claude-motion-design/blob/3d90d349ef3fdde9b7e89de4df4a2159c9e8697f/skill/motion-design/SKILL.md"
+  },
+  {
+    "preview_id": "motion-skill",
+    "repository": "abhimahamkali/claude-motion-skill",
+    "path": "plugins/motion/skills/motion/SKILL.md",
+    "commit": "37d44b5d2db8e28c4ebf011cb8f1bd1e260ac09c",
+    "source_url": "https://github.com/abhimahamkali/claude-motion-skill/blob/37d44b5d2db8e28c4ebf011cb8f1bd1e260ac09c/plugins/motion/skills/motion/SKILL.md"
+  },
+  {
+    "preview_id": "iart-motion-skills",
+    "repository": "iart-ai/kinetic-typography-skills",
+    "path": "skills/kinetic-typography/SKILL.md",
+    "commit": "fccc94bd325d824235ee9e715e65abde57b6513a",
+    "source_url": "https://github.com/iart-ai/kinetic-typography-skills/blob/fccc94bd325d824235ee9e715e65abde57b6513a/skills/kinetic-typography/SKILL.md"
+  }
+]

@@ -16,16 +16,13 @@ def read_json(path):
     return json.loads((ROOT / path).read_text(encoding="utf-8"))
 
 
-def artwork(category):
-    artworks = {
-        "skills": '<div class="art-board"><div class="board-label">YOUR BRIEF</div><div class="board-line"></div><div class="board-line short"></div><div class="board-steps"><span>PLAN</span><span>BUILD</span><span>REVIEW</span></div><div class="board-cursor" data-demo-cursor>↗</div></div>',
-        "render": '<div class="art-render"><div class="render-sheet rear"></div><div class="render-sheet front"><span>HTML</span><b data-demo-render>→</b><span>MP4</span></div><div class="render-timeline"><i data-demo-playhead></i><span></span><span></span><span></span></div><small>FRAME BY FRAME</small></div>',
-        "ui": '<div class="art-type"><div class="type-word" aria-hidden="true"><span data-demo-letter="0">M</span><span data-demo-letter="1">O</span><span data-demo-letter="2">V</span><span data-demo-letter="3">E</span><b>.</b></div><div class="type-pill" data-demo-pill>JUST RIGHT <span>↗</span></div></div>',
-        "three": '<div class="art-depth"><div class="depth-orbit"></div><div class="depth-orbit second"></div><div class="cube" data-demo-cube><i class="face face-front"></i><i class="face face-back"></i><i class="face face-left"></i><i class="face face-right"></i><i class="face face-top"></i><i class="face face-bottom"></i></div><span class="depth-label">A LITTLE DEPTH.</span></div>',
-        "vector": '<svg class="art-vector" viewBox="0 0 400 190" aria-hidden="true"><g data-demo-petals transform="translate(145 94)"><ellipse rx="25" ry="64" fill="#edaaaf"/><ellipse rx="25" ry="64" fill="#edaaaf" transform="rotate(60)"/><ellipse rx="25" ry="64" fill="#edaaaf" transform="rotate(120)"/><circle r="18" fill="#181d22"/></g><g data-demo-vector transform="translate(274 94)"><rect x="-40" y="-40" width="80" height="80" rx="23" fill="none" stroke="#f5eee2" stroke-width="3"/><circle r="22" fill="#f5eee2"/></g><path d="M75 170H327" stroke="#ffffff" stroke-opacity=".18"/></svg>',
-        "data": '<svg class="art-data" viewBox="0 0 400 190" aria-hidden="true"><path d="M65 35V155H340M65 115H340M65 75H340M65 35H340" fill="none" stroke="#fff" stroke-opacity=".13"/><g fill="#aebee8"><rect data-demo-bar="0" x="88" y="75" width="38" height="80" rx="5"/><rect data-demo-bar="1" x="149" y="54" width="38" height="101" rx="5"/><rect data-demo-bar="2" x="210" y="92" width="38" height="63" rx="5"/><rect data-demo-bar="3" x="271" y="38" width="38" height="117" rx="5"/></g><text x="68" y="181" fill="#b4bdc7" font-size="10" letter-spacing="2">ILLUSTRATIVE DATA</text></svg>',
-    }
-    return artworks[category]
+def preview_markup(preview):
+    if not preview:
+        return '<p class="preview-pending">作例の制作中</p>'
+    v=preview
+    source=f"{REPO_URL}/blob/main/{v['source_file']}"
+    native=f'<a href="{v["native_output"]["path"]}">処理した元ファイル ↗</a>' if v.get('native_output') else ''
+    return f'''<figure class="specimen"><div class="specimen-screen"><video data-preview data-src="{v['files']['mp4']['path']}" poster="{v['files']['webp']['path']}" preload="none" muted loop playsinline aria-label="{esc(v['title'],quote=True)}"></video><button class="preview-opener" type="button" data-open-preview="{v['files']['mp4']['path']}" data-title="{esc(v['title'],quote=True)}" data-description="{esc(v['description'],quote=True)}" data-gif="{v['files']['gif']['path']}" data-source="{source}" aria-label="{esc(v['title'],quote=True)}を拡大再生"><span>拡大して再生 ↗</span></button></div><figcaption><span class="preview-role">{esc(v['role'])}</span><strong>{esc(v['title'])}</strong><p>{esc(v['description'])}</p><div class="preview-links"><a href="{v['files']['gif']['path']}">GIF ↗</a><a href="{source}" target="_blank" rel="noopener noreferrer">制作コード ↗</a>{native}<span>{v['duration']:g}秒 / {v['version']}</span></div></figcaption></figure>'''
 
 
 def project_card(project, categories):
@@ -34,20 +31,23 @@ def project_card(project, categories):
     license_url = p["license_url"]
     tags = "".join(f'<span>{esc(tag)}</span>' for tag in p["tags"])
     search = " ".join(str(p[k]) for k in ("name", "repository", "summary", "use_case", "opus_relation")) + " " + " ".join(p["tags"])
+    preview = preview_markup(p.get("preview"))
     command = f'<div class="install"><code>{esc(p["install"])}</code><button type="button" data-copy-command aria-label="{esc(p["name"])}の導入コマンドをコピー">コピー</button></div>' if p.get("install") else ""
     return f'''<article class="project-card" id="{esc(p['id'])}" data-project data-category="{esc(p['category'])}" data-origin="{esc(p['origin'])}" data-license="{esc(p['license_class'])}" data-search="{esc(search.lower(), quote=True)}" style="--accent:{categories[p['category']]['color']}">
+      {preview}
       <div class="project-top"><span class="project-kind">{esc(p['kind'])}</span><span class="origin {p['origin']}">{origin}</span></div>
       <h2><a href="{p['url']}" target="_blank" rel="noopener noreferrer">{esc(p['name'])}<span aria-hidden="true"> ↗</span></a></h2>
       <p class="repo-name">{esc(p['repository'])}</p><p class="project-summary">{esc(p['summary'])}</p>
       <p class="use-case"><b>使いどころ</b>{esc(p['use_case'])}</p><div class="tags">{tags}</div>
       <div class="project-meta"><a href="{license_url}" target="_blank" rel="noopener noreferrer">{esc(p['license_label'])}</a><span title="GitHubリポジトリ全体のstar数。品質や利用者数を示す値ではありません。">★ {p['stars']:,}</span></div>
-      <details><summary>導入条件・Claudeとの組み合わせ</summary><div class="detail-body"><p><b>環境</b> {esc(p['requirements'])}</p><p><b>Claudeとの関係</b> {esc(p['opus_relation'])}</p><p><b>利用時の確認</b> {esc(p['caution'])}</p>{command}<p class="verification-label">確認範囲：README・ライセンス等の一次資料。実生成テストは未実施。</p><a href="{p['readme_url']}" target="_blank" rel="noopener noreferrer">確認したREADME ↗</a> <span class="commit-label">{p['commit_sha'][:7]}</span></div></details>
+      <details><summary>導入条件・Claudeとの組み合わせ</summary><div class="detail-body"><p><b>環境</b> {esc(p['requirements'])}</p><p><b>Claudeとの関係</b> {esc(p['opus_relation'])}</p><p><b>利用時の確認</b> {esc(p['caution'])}</p>{command}<p class="verification-label">確認範囲：一次資料と、この項目の専用作例の制作・実行。全機能の検証ではありません。</p><a href="{p['readme_url']}" target="_blank" rel="noopener noreferrer">確認したREADME ↗</a> <span class="commit-label">{p['commit_sha'][:7]}</span></div></details>
     </article>'''
 
 
 def build():
     curation = read_json("data/curation.json")
     verification = read_json("data/verification.json")
+    production = read_json("data/preview-production.json")["previews"]
     assert not verification["errors"], verification["errors"]
     sources = {p["repository"]: p for p in verification["sources"]}
     categories = {c["id"]: c for c in curation["categories"]}
@@ -65,6 +65,7 @@ def build():
         license_path = next((path for path in metadata["license_paths"] if path.lower().split(".")[0] in {"license","licence"}), (metadata["license_paths"] or [None])[0])
         item["license_url"] = overrides.get(p["repository"]) or (
             f"{metadata['url']}/blob/{metadata['commit_sha']}/{license_path}" if license_path else metadata["readme_url"])
+        item["preview"] = production.get(p["id"])
         projects.append(item)
     counts = collections.Counter(p["category"] for p in projects)
     total = len(projects)
@@ -72,10 +73,12 @@ def build():
     assert sum(p["origin"] == "source_post" for p in projects) == 10
     curation["projects"] = projects
     (ROOT / "data/projects.json").write_text(json.dumps(curation, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
+    representatives={"skills":"remotion-skills","render":"hyperframes","ui":"gsap","three":"three","vector":"pixi","data":"deck"}
+    by_id={p["id"]:p for p in projects}
     cards = []
     for category in categories.values():
         kind = category["id"]
-        cards.append(f'''<article class="category-card" style="--accent:{category['color']}"><div class="category-top"><span>{category['label']}</span><span>{counts[kind]}件</span></div><a class="category-art" href="projects.html?category={kind}" aria-label="{category['name']}の一覧を見る">{artwork(kind)}</a><div class="category-body"><h3><a href="projects.html?category={kind}">{category['name']}</a></h3><p>{category['description']}</p><p class="category-examples">{category['examples']}</p><a class="category-action" href="projects.html?category={kind}">一覧を見る<span aria-hidden="true">→</span></a></div></article>''')
+        cards.append(f'''<article class="category-card" style="--accent:{category['color']}"><div class="category-top"><span>{category['label']}</span><span>{counts[kind]}件</span></div>{preview_markup(by_id[representatives[kind]].get("preview"))}<div class="category-body"><h3><a href="projects.html?category={kind}">{category['name']}</a></h3><p>{category['description']}</p><p class="category-examples">{category['examples']}</p><a class="category-action" href="projects.html?category={kind}">一覧を見る<span aria-hidden="true">→</span></a></div></article>''')
     filters = '<button class="filter-chip active" type="button" data-category-filter="all" aria-pressed="true">すべて <span>'+str(total)+'</span></button>'
     filters += "".join(f'<button class="filter-chip" type="button" data-category-filter="{c["id"]}" aria-pressed="false">{c["short"]} <span>{counts[c["id"]]}</span></button>' for c in categories.values())
     replacements = {"{{TOTAL}}":str(total), "{{ADDITIONS}}":str(additions), "{{CATEGORY_CARDS}}":"\n".join(cards), "{{FILTERS}}":filters, "{{PROJECT_CARDS}}":"\n".join(project_card(p,categories) for p in projects), "{{SITE_URL}}":SITE_URL, "{{REPO_URL}}":REPO_URL}
@@ -111,7 +114,7 @@ Claude Opus 5.5を使ったモーショングラフィック制作のための�
 | 触れるUI・製品サイト | MotionまたはGSAP + Emil Kowalski Skills | [Webのルート]({SITE_URL}guide.html#web) |
 | 数式・仕組みの解説 | ManimまたはMotion Canvas + 場面の構成表 | [解説動画のルート]({SITE_URL}guide.html#explain) |
 
-これらは資料をもとにした編集上の提案です。各スタックのOpus 5.5による実生成比較は行っていません。
+これらは資料をもとにした編集上の提案です。Opus 5.5に全体設計とスキル適用・実装を相談し、各項目に専用作例を制作しました。モデル間の性能比較は行っていません。
 
 ## Claudeと各ツールの役割
 
@@ -127,9 +130,10 @@ Claudeが構成やコードをつくり、描画・動画化はブラウザや�
 
 - 一次資料：各公開リポジトリのREADME、公開ライセンス、公式ドキュメント。
 - 確認した版とGitHub star数は[data/verification.json](data/verification.json)に記録。star数はリポジトリ全体の値で、品質や利用者数を表しません。
-- 作者が公開した作例・実績と、このガイドでの検証を区別しています。こちらで全ツールのインストールやOpus 5.5実生成は行っていません。
+- 作者が公開した作例・実績と、このガイドでの検証を区別しています。全31項目に専用の動画を制作。描画、処理、スキル適用、公式素材の再生、参考資料の方法適用を各作例の説明で区別しています。
 - RemotionとGSAPは独自条件のあるソフトウェア。LICENSE未確認の公開スキルや参考資料も、明示した上で掲載しています。
-- サイトのカテゴリの動きと[seek(t)の見本](examples/seek-demo/)は本ガイド独自の表現見本です。
+- サイトの動く作例は実行したMP4。全件にGIF・ポスター・制作コードを掲載。[制作記録](docs/作例の制作記録.md)と[data/preview-production.json](data/preview-production.json)で使用版、役割、実出力を確認できます。
+- Riveのrocket.rivは公式MITテスト素材で、独自制作の.rivではありません。iart索引からはkinetic-typographyパックを選択。事例集は制作方法の参照として適用しました。
 - 詳細は[調査ノート](docs/調査ノート.md)、[出典とライセンス](docs/出典とライセンス.md)、[制作スタック](docs/制作スタック.md)へ。
 
 ## ローカルで表示する

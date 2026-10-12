@@ -1,0 +1,281 @@
+{
+  "remotion-skills": {
+    "id": "remotion-skills",
+    "title": "リリースノートを一本の映像に",
+    "role": "スキル適用",
+    "description": "公式スキルをOpus 5.5へ渡し、Sequenceの場面分割・マスク・springで制作。",
+    "source_file": "examples/remotion/src/ReleaseNotes.tsx",
+    "version": "Remotion 4.0.535",
+    "poster_time": 4.5
+  },
+  "emil-skills": {
+    "id": "emil-skills",
+    "title": "押し直してもつながるUI",
+    "role": "スキル適用",
+    "description": "Emilの設計・レビュー規則を適用。短い応答、起点、割り込み時の動きを確認。",
+    "source_file": "examples/runtime/scenes/emil-skills.js",
+    "version": "スキル原文 + ブラウザ実装",
+    "poster_time": 3.8
+  },
+  "motion-graphics-skills": {
+    "id": "motion-graphics-skills",
+    "title": "小さな製品のローンチ映像",
+    "role": "スキル適用",
+    "description": "選択した制作スキルをOpusへ渡して制作した、架空製品の紹介。",
+    "source_file": "examples/runtime/scenes/motion-graphics-skills.js",
+    "version": "Charlie947 skill + Canvas",
+    "poster_time": 4
+  },
+  "claude-motion": {
+    "id": "claude-motion",
+    "title": "編集から再生へ、ビートをつなぐ",
+    "role": "スキル適用・音声",
+    "description": "Whaleyのmotion-designとsound-designを適用。共通の時間表で映像と自作SFXを同期。",
+    "source_file": "examples/remotion/src/WhaleyFilm.tsx",
+    "version": "Remotion 4.0.535 + Python SFX",
+    "poster_time": 4
+  },
+  "claude-motion-design": {
+    "id": "claude-motion-design",
+    "title": "ボタンから画面へ、形を引き継ぐ",
+    "role": "スキル適用",
+    "description": "Howseenのseek(t)方式、共有要素の受け渡し、ビート設計を適用。",
+    "source_file": "examples/runtime/scenes/claude-motion-design.js",
+    "version": "Howseen skill + HTML engine",
+    "poster_time": 4
+  },
+  "motion-skill": {
+    "id": "motion-skill",
+    "title": "レンズが光を一つに集める",
+    "role": "スキル適用・専用描画",
+    "description": "原文・style・元テンプレートを参照し、オリジナルのレンズ場面を専用render.mjsで書き出した。",
+    "source_file": "examples/motion-skill/scene.js",
+    "version": "Pinned /motion renderer + Canvas",
+    "poster_time": 5.8
+  },
+  "iart-motion-skills": {
+    "id": "iart-motion-skills",
+    "title": "一行ずつ、考えが立ち上がる",
+    "role": "個別パック適用",
+    "description": "索引からkinetic-typographyを選び、行マスク、80ms差、ease-out、アクセシビリティ規則を適用。",
+    "source_file": "examples/kinetic-typography/index.html",
+    "version": "iart kinetic-typography 0.1.0",
+    "poster_time": 3
+  },
+  "opus-video-prompts": {
+    "id": "opus-video-prompts",
+    "title": "一つの線から、時間を持つ映像へ",
+    "role": "資料の方法を適用",
+    "description": "公開事例集の「構成表→seek(t)→フレーム描画」という方法を適用した独自作品。資料自体はエンジンではない。",
+    "source_file": "examples/runtime/scenes/opus-video-prompts.js",
+    "version": "Original Canvas method study",
+    "poster_time": 4.2
+  },
+  "hyperframes": {
+    "id": "hyperframes",
+    "title": "HTMLをフレーム単位の動画へ",
+    "role": "エンジン実行",
+    "description": "data-*による尺・トラック宣言とpaused GSAP timeline。HyperFrames CLI自身でMP4を出力。",
+    "source_file": "examples/hyperframes/index.html",
+    "version": "HyperFrames 0.8.150",
+    "poster_time": 3.5
+  },
+  "remotion": {
+    "id": "remotion",
+    "title": "一つの構成から、三つの変化へ",
+    "role": "エンジン実行",
+    "description": "Reactのコンポーネントと入力値で、編集・ローンチ・製品の三つのデザインを切り替える。",
+    "source_file": "examples/remotion/src/VariantFilm.tsx",
+    "version": "Remotion 4.0.535 / React 19.2.3",
+    "poster_time": 4.5
+  },
+  "motion-canvas": {
+    "id": "motion-canvas",
+    "title": "コードを書き換えると、リズムも変わる",
+    "role": "エンジン実行",
+    "description": "Codeノードの文字列モーフとRectのsignalを、generatorの時間軸で連動。実Rendererから241フレームを取得。",
+    "source_file": "examples/motion-canvas/src/scene.tsx",
+    "version": "Motion Canvas 3.17.2",
+    "poster_time": 4.5
+  },
+  "ffmpeg": {
+    "id": "ffmpeg",
+    "title": "数式だけで描く、流れる信号",
+    "role": "生成・エンコード",
+    "description": "入力映像なし。lavfi、geqの時刻付き数式、drawtextで直接生成しH.264へ。",
+    "source_file": "examples/ffmpeg/render_signal.py",
+    "version": "FFmpeg 8.1.2",
+    "poster_time": 4
+  },
+  "ffmpeg-wasm": {
+    "id": "ffmpeg-wasm",
+    "title": "ブラウザで色とサイズを変換",
+    "role": "処理結果・比較",
+    "description": "左が独自FFmpeg映像、右がWASMのexecでhueとscaleを実行した実出力。入力と変換結果を同時に再生。",
+    "source_file": "examples/runtime/scenes/ffmpeg-wasm.js",
+    "version": "ffmpeg 0.12.15 / core 0.12.10",
+    "poster_time": 4
+  },
+  "mediabunny": {
+    "id": "mediabunny",
+    "title": "Canvasから、本物の動画ファイルへ",
+    "role": "ブラウザ内エンコード",
+    "description": "CanvasSourceで240枚をVP9/WebMへエンコード。Inputで8秒とcodecを読み戻し、そのファイルを再生。",
+    "source_file": "examples/runtime/scenes/mediabunny.js",
+    "version": "Mediabunny 1.61.3",
+    "poster_time": 4
+  },
+  "playwright": {
+    "id": "playwright",
+    "title": "指定した瞬間を、そのまま残す",
+    "role": "フレーム取得",
+    "description": "GSAP作品を実際にseekして取得した4枚から、時刻付きフィルムストリップを制作。Playwrightは取得担当。",
+    "source_file": "examples/runtime/scenes/playwright.js",
+    "version": "Playwright 1.64.0 / Chrome 154",
+    "poster_time": 4.2
+  },
+  "motion": {
+    "id": "motion",
+    "title": "ひとつの操作で、カードが展開する",
+    "role": "実ライブラリ",
+    "description": "animateのsequenceとstaggerを使い、カードの展開から戻りまでを時刻指定で再生。",
+    "source_file": "examples/runtime/scenes/motion.js",
+    "version": "Motion 14.1.0",
+    "poster_time": 4
+  },
+  "gsap": {
+    "id": "gsap",
+    "title": "活字棚から、言葉を組み上げる",
+    "role": "実ライブラリ・Opus実装",
+    "description": "SplitTextの文字・行分割とマスク、ラベル付きtimeline。組版→校正→活字を戻す流れ。",
+    "source_file": "examples/runtime/scenes/gsap.js",
+    "version": "GSAP 3.15.0",
+    "poster_time": 4
+  },
+  "anime": {
+    "id": "anime",
+    "title": "線から秩序へ、形から流れへ",
+    "role": "実ライブラリ",
+    "description": "svg.createDrawableの線描画と、中心から広がるstagger gridを組み合わせた幾何学作品。",
+    "source_file": "examples/runtime/scenes/anime.js",
+    "version": "Anime.js 4.5.0",
+    "poster_time": 4
+  },
+  "confetti": {
+    "id": "confetti",
+    "title": "完成の瞬間に、小さな祝福を",
+    "role": "実ライブラリ",
+    "description": "canvas-confettiの実物理、独自のひし形、固定乱数。仮想60Hzで粒子を進めて取得。",
+    "source_file": "examples/runtime/scenes/confetti.js",
+    "version": "canvas-confetti 1.9.4",
+    "poster_time": 2.2
+  },
+  "three": {
+    "id": "three",
+    "title": "360本の柱が、31の形になる",
+    "role": "実ライブラリ・Opus実装",
+    "description": "InstancedMesh、物理材質、RoomEnvironment、影。波→文字形→波、固定方向のドリー。",
+    "source_file": "examples/runtime/scenes/three.js",
+    "version": "Three.js 0.186.1",
+    "poster_time": 4
+  },
+  "fiber": {
+    "id": "fiber",
+    "title": "Reactの部品で、均衡する立体を",
+    "role": "実ライブラリ",
+    "description": "宣言的なメッシュ、useFrame、frameloop=neverとadvanceで、三重リングと中心の立体を描画。",
+    "source_file": "examples/runtime/scenes/fiber.js",
+    "version": "Fiber 9.8.1 / React 19.3.0",
+    "poster_time": 4
+  },
+  "drei": {
+    "id": "drei",
+    "title": "丸い角と、柔らかな接地感",
+    "role": "実ライブラリ",
+    "description": "RoundedBox、Center、Edges、ContactShadowsを使った、立体オブジェクトのスタジオ作例。",
+    "source_file": "examples/runtime/scenes/drei.js",
+    "version": "Drei 10.7.9 / Fiber 9.8.1",
+    "poster_time": 4
+  },
+  "cobe": {
+    "id": "cobe",
+    "title": "小さな地球で、拠点をつなぐ",
+    "role": "実ライブラリ",
+    "description": "東京・ロンドン・ニューヨークのマーカーを持つ点描地球。phiを周期的に更新して描画。",
+    "source_file": "examples/runtime/scenes/cobe.js",
+    "version": "Cobe 2.0.1",
+    "poster_time": 2
+  },
+  "twgl": {
+    "id": "twgl",
+    "title": "GLSLが描く、有機的な帯",
+    "role": "実ライブラリ",
+    "description": "実Shaderとquad bufferをTWGLで接続。時刻uniformが色・流れ・輪郭を作る。",
+    "source_file": "examples/runtime/scenes/twgl.js",
+    "version": "TWGL.js 7.0.0",
+    "poster_time": 4
+  },
+  "fabric": {
+    "id": "fabric",
+    "title": "動かしても、部品のまま編集できる",
+    "role": "実ライブラリ",
+    "description": "図形と文字をGroup化。選択枠を表示したまま変形し、実際にtoSVGを書き出す。",
+    "source_file": "examples/runtime/scenes/fabric.js",
+    "version": "Fabric.js 7.4.0",
+    "poster_time": 4
+  },
+  "rive": {
+    "id": "rive",
+    "title": "ボタンの状態を、時間で操る",
+    "role": "再生ランタイム・公式素材",
+    "description": "Advanced Canvas WASMでPressアニメーションを時間指定。rocket.rivはRive公式MITテスト素材で、素材の自作ではありません。",
+    "source_file": "examples/runtime/scenes/rive.js",
+    "version": "Rive Canvas Advanced 2.44.2",
+    "poster_time": 4
+  },
+  "lottie": {
+    "id": "lottie",
+    "title": "一つのJSON、二つの描画面",
+    "role": "実ライブラリ・独自素材",
+    "description": "自作ベクターJSONをSVGとCanvasの両レンダラーで並べ、goToAndStopで同じフレームへ。",
+    "source_file": "examples/runtime/scenes/lottie.js",
+    "version": "Lottie Web 5.13.0",
+    "poster_time": 4
+  },
+  "pixi": {
+    "id": "pixi",
+    "title": "散らばった粒が、FORMに集まる",
+    "role": "実ライブラリ",
+    "description": "GPU描画のSprite、Container、ColorMatrixFilter。文字のマスクへ粒を集めて解く。",
+    "source_file": "examples/runtime/scenes/pixi.js",
+    "version": "PixiJS 8.22.0",
+    "poster_time": 4
+  },
+  "deck": {
+    "id": "deck",
+    "title": "5,000点から、街の脈動を見る",
+    "role": "実ライブラリ・架空データ",
+    "description": "HexagonLayerが点を実集計。立体密度とArcLayerの経路を表示。データは独自の例示。",
+    "source_file": "examples/runtime/scenes/deck.js",
+    "version": "deck.gl 9.4.0",
+    "poster_time": 4
+  },
+  "d3": {
+    "id": "d3",
+    "title": "同じ階層を、別の形へ",
+    "role": "実ライブラリ・架空データ",
+    "description": "同じ値をtreemapからpartitionのicicleへ変換。データ結合と補間で関係を保つ。",
+    "source_file": "examples/runtime/scenes/d3.js",
+    "version": "D3 7.9.0",
+    "poster_time": 4
+  },
+  "manim": {
+    "id": "manim",
+    "title": "円を重ねて、一筆の形を描く",
+    "role": "エンジン実行",
+    "description": "四つの周波数によるepicycle。ValueTracker・always_redraw・VMobjectを実Manimで描画。",
+    "source_file": "examples/manim/epicycles.py",
+    "version": "Manim Community 0.22.0",
+    "poster_time": 5.8
+  }
+}

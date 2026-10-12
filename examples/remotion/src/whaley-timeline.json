@@ -1,0 +1,30 @@
+{
+  "fps": 30,
+  "bpm": 120,
+  "duration": 8,
+  "s1": {"start": 0, "snaps": [0.5, 1.0, 1.5]},
+  "s2": {"toggle": 2.0, "title": 2.0, "playStart": 2.0, "playEnd": 3.5},
+  "s3": {"riser": 3.0, "collapse": 3.5, "hit": 4.0},
+  "s4": {"wrap": 4.5, "cover": 5.0, "title": 5.2, "toggleBack": 7.2, "titleBack": 7.45, "unwrap": 7.5, "end": 8.0},
+  "audio": {
+    "key": "D major",
+    "targetLufs": -14,
+    "truePeakDb": -2,
+    "cues": [
+      {"id": "pad", "beat": "s1.start", "offset": 0, "sound": "pad", "notes": ["D3", "A3", "F#4"], "length": 8.0, "gain": 0.03, "pan": 0, "duck": {"beat": "s3.hit", "amount": 0.65, "release": 0.6}},
+      {"id": "snap-1", "beat": "s1.snaps.0", "offset": 0, "sound": "click+blip", "note": "D5", "gain": 0.12, "pan": -0.6},
+      {"id": "snap-2", "beat": "s1.snaps.1", "offset": 0, "sound": "click+blip", "note": "F#5", "gain": 0.12, "pan": 0.0},
+      {"id": "snap-3", "beat": "s1.snaps.2", "offset": 0, "sound": "click+blip", "note": "A5", "gain": 0.12, "pan": 0.45},
+      {"id": "toggle-play", "beat": "s2.toggle", "offset": 0, "sound": "click+blip", "note": "D6", "gain": 0.14, "pan": 0.72},
+      {"id": "title-play", "beat": "s2.title", "offset": 0.09, "sound": "whoosh", "gain": 0.08, "pan": -0.6},
+      {"id": "riser", "beat": "s3.riser", "offset": 0, "sound": "riser", "endsAt": "s3.hit", "gain": 0.12, "pan": 0},
+      {"id": "collapse", "beat": "s3.collapse", "offset": 0, "sound": "whoosh", "gain": 0.15, "pan": 0},
+      {"id": "impact", "beat": "s3.hit", "offset": 0, "sound": "impact", "gain": 0.3, "pan": 0},
+      {"id": "cover-chime", "beat": "s4.cover", "offset": 0, "sound": "chime", "notes": ["D5", "F#5", "A5"], "gain": 0.2, "pan": 0},
+      {"id": "title-keep", "beat": "s4.title", "offset": 0.09, "sound": "whoosh", "gain": 0.08, "pan": -0.6},
+      {"id": "title-keep-land", "beat": "s4.title", "offset": 0.6, "sound": "blip", "note": "A5", "gain": 0.06, "pan": -0.6},
+      {"id": "toggle-edit", "beat": "s4.toggleBack", "offset": 0, "sound": "click", "gain": 0.1, "pan": 0.72},
+      {"id": "unwrap", "beat": "s4.unwrap", "offset": 0, "sound": "whoosh", "gain": 0.1, "pan": 0}
+    ]
+  }
+}

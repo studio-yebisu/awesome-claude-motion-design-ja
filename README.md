@@ -17,7 +17,7 @@ Claude Opus 5.5を使ったモーショングラフィック制作のための�
 | 触れるUI・製品サイト | MotionまたはGSAP + Emil Kowalski Skills | [Webのルート](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html#web) |
 | 数式・仕組みの解説 | ManimまたはMotion Canvas + 場面の構成表 | [解説動画のルート](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html#explain) |
 
-これらは資料をもとにした編集上の提案です。各スタックのOpus 5.5による実生成比較は行っていません。
+これらは資料をもとにした編集上の提案です。Opus 5.5に全体設計とスキル適用・実装を相談し、各項目に専用作例を制作しました。モデル間の性能比較は行っていません。
 
 ## Claudeと各ツールの役割
 
@@ -93,9 +93,10 @@ Claudeが構成やコードをつくり、描画・動画化はブラウザや�
 
 - 一次資料：各公開リポジトリのREADME、公開ライセンス、公式ドキュメント。
 - 確認した版とGitHub star数は[data/verification.json](data/verification.json)に記録。star数はリポジトリ全体の値で、品質や利用者数を表しません。
-- 作者が公開した作例・実績と、このガイドでの検証を区別しています。こちらで全ツールのインストールやOpus 5.5実生成は行っていません。
+- 作者が公開した作例・実績と、このガイドでの検証を区別しています。全31項目に専用の動画を制作。描画、処理、スキル適用、公式素材の再生、参考資料の方法適用を各作例の説明で区別しています。
 - RemotionとGSAPは独自条件のあるソフトウェア。LICENSE未確認の公開スキルや参考資料も、明示した上で掲載しています。
-- サイトのカテゴリの動きと[seek(t)の見本](examples/seek-demo/)は本ガイド独自の表現見本です。
+- サイトの動く作例は実行したMP4。全件にGIF・ポスター・制作コードを掲載。[制作記録](docs/作例の制作記録.md)と[data/preview-production.json](data/preview-production.json)で使用版、役割、実出力を確認できます。
+- Riveのrocket.rivは公式MITテスト素材で、独自制作の.rivではありません。iart索引からはkinetic-typographyパックを選択。事例集は制作方法の参照として適用しました。
 - 詳細は[調査ノート](docs/調査ノート.md)、[出典とライセンス](docs/出典とライセンス.md)、[制作スタック](docs/制作スタック.md)へ。
 
 ## ローカルで表示する

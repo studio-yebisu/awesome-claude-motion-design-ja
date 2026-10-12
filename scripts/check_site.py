@@ -23,7 +23,7 @@ class Page(HTMLParser):
         if tag == "html": self.lang = attrs.get("lang")
         if tag == "h1": self.h1 += 1
         if "id" in attrs: self.ids.append(attrs["id"])
-        for attr in ("href", "src"):
+        for attr in ("href", "src", "poster", "data-src", "data-open-preview", "data-gif"):
             if attrs.get(attr): self.links.append(attrs[attr])
         if tag == "img":
             assert "alt" in attrs, f"Image missing alt: {self.path.name}"
@@ -73,7 +73,7 @@ def main():
             if url.scheme or url.netloc: continue
             target = (path.parent/unquote(url.path)).resolve() if url.path else path
             assert target.exists(),f"Missing Markdown link: {path.name} -> {link}"
-    for path in [ROOT/"assets/site.js",ROOT/"assets/demo.js",ROOT/"examples/seek-demo/scene.js"]:
+    for path in [ROOT/"assets/site.js",ROOT/"assets/previews.js",ROOT/"examples/seek-demo/scene.js"]:
         subprocess.run(["node","--check",str(path)],check=True,capture_output=True,text=True)
     from PIL import Image
     with Image.open(ROOT/"assets/og-card.png") as image:
