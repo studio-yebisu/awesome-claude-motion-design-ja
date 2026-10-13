@@ -15,6 +15,7 @@ class Page(HTMLParser):
     def __init__(self, path):
         super().__init__(convert_charrefs=True)
         self.path, self.ids, self.links, self.lang = path, [], [], None
+        self.meta, self.canonical = {}, []
         self.h1 = 0
         self.feed(path.read_text(encoding="utf-8"))
 
@@ -22,6 +23,12 @@ class Page(HTMLParser):
         attrs = dict(attrs)
         if tag == "html": self.lang = attrs.get("lang")
         if tag == "h1": self.h1 += 1
+        if tag == "meta" and (attrs.get("property") or attrs.get("name")):
+            key = attrs.get("property") or attrs["name"]
+            assert key not in self.meta, f"Duplicate meta tag: {self.path.name} -> {key}"
+            self.meta[key] = attrs.get("content", "")
+        if tag == "link" and attrs.get("rel") == "canonical":
+            self.canonical.append(attrs["href"])
         if "id" in attrs: self.ids.append(attrs["id"])
         for attr in ("href", "src", "poster", "data-src", "data-open-preview", "data-gif"):
             if attrs.get(attr): self.links.append(attrs[attr])
@@ -76,11 +83,28 @@ def main():
     for path in [ROOT/"assets/site.js",ROOT/"assets/previews.js",ROOT/"examples/seek-demo/scene.js"]:
         subprocess.run(["node","--check",str(path)],check=True,capture_output=True,text=True)
     from PIL import Image
-    with Image.open(ROOT/"assets/og-card.png") as image:
-        assert image.size == (1200,630)
-        image.verify()
+    for filename in ("og-card.png", "og-card-motion-v2.png"):
+        with Image.open(ROOT/"assets"/filename) as image:
+            assert image.size == (1200,630)
+            image.verify()
+    site = "https://studio-yebisu.github.io/awesome-claude-motion-design-ja/"
+    for filename in ("index.html", "projects.html", "guide.html"):
+        page = pages[(ROOT/filename).resolve()]
+        url = site + ("" if filename == "index.html" else filename)
+        assert page.canonical == [url], (filename, page.canonical)
+        for key in ("og:title", "og:description", "og:type", "og:locale", "og:site_name", "og:image:alt", "twitter:image:alt"):
+            assert page.meta.get(key), (filename,key)
+        assert page.meta["og:url"] == url
+        assert page.meta["og:image"] == page.meta["twitter:image"] == site + "assets/og-card-motion-v2.png"
+        assert page.meta["og:image:secure_url"] == page.meta["og:image"]
+        assert page.meta["og:image:type"] == "image/png"
+        assert (page.meta["og:image:width"],page.meta["og:image:height"]) == ("1200","630")
+        assert page.meta["twitter:card"] == "summary_large_image"
+        assert page.meta["twitter:title"] == page.meta["og:title"]
+        assert page.meta["twitter:description"] == page.meta["og:description"]
     print(f"PASS: {len(records)} unique repositories, 6 categories, 10 source-post + 21 additional.")
     print(f"PASS: {checked} local HTML links, HTML anchors, Markdown links, 3 JavaScript syntax checks, OG PNG.")
+    print("PASS: canonical + Open Graph + large-image Twitter cards on all 3 public pages.")
     print("License classes:",dict(Counter(p["license_class"] for p in records)))
 
 

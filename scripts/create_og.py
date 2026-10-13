@@ -1,4 +1,4 @@
-"""Draw an original social cover from vector primitives and local system fonts."""
+"""Draw an original social cover using actual motion specimens and local fonts."""
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
@@ -29,37 +29,28 @@ text(111,45,"StudioYebisu / 日本語ガイド",16)
 text(51,128,"CLAUDE OPUS 5.5  /  MOTION DESIGN",16,"#697078")
 text(48,165,"Claudeでつくる、",43,bold=True)
 text(48,225,"モーショングラフィック。",43,bold=True)
-text(51,304,"制作スキルとツールを、つくりたいものから選ぶ。",21,"#697078")
-text(928,148,"31",88,bold=True)
-text(936,272,"6カテゴリ",22)
-text(936,310,"スキル・ツール・資料",14,"#697078")
+text(51,304,"31本の動く作例から、スキルとツールを選ぶ。",21,"#697078")
+rect((905,136,1151,334),"#0b5546",r=12)
+text(928,143,"31",88,"#f5f2ec",True)
+text(936,267,"動く作例",20,"#f5f2ec",True)
+text(936,307,"6カテゴリ / 日本語",14,"#d4e8df")
 
 labels=[("制作スキル","#cbe681"),("動画書き出し","#f2c078"),("UI・文字","#c8b7f0"),("3D","#99d6d5"),("2D・ベクター","#eba9ad"),("データ・図解","#aebee8")]
+poster_ids=["remotion-skills","hyperframes","gsap","three","pixi","deck"]
 for i,(label,color) in enumerate(labels):
     x=51+i*184
     rect((x,382,x+170,540),"#1c2329",r=9)
-    if i==0:
-        for j in range(3): rect((x+29,406+j*16,x+132-j*16,412+j*16),color,r=2)
-    elif i==1:
-        rect((x+36,405,x+131,464),color,r=5)
-        text(x+51,420,"→ MP4",15,"#252c25",True)
-    elif i==2:
-        text(x+26,410,"MOVE.",28,color,True)
-    elif i==3:
-        d.polygon([(v*SCALE,w*SCALE) for v,w in [(x+42,422),(x+79,404),(x+119,419),(x+79,437)]],fill="#c4e5e1")
-        d.polygon([(v*SCALE,w*SCALE) for v,w in [(x+42,422),(x+79,437),(x+79,474),(x+42,457)]],fill=color)
-        d.polygon([(v*SCALE,w*SCALE) for v,w in [(x+79,437),(x+119,419),(x+119,456),(x+79,474)]],fill="#588d8a")
-    elif i==4:
-        for dx,dy in [(0,-15),(15,0),(0,15),(-15,0)]:
-            d.ellipse(((x+63+dx)*SCALE,(426+dy)*SCALE,(x+103+dx)*SCALE,(466+dy)*SCALE),fill=color)
-        d.ellipse(((x+74)*SCALE,437*SCALE,(x+92)*SCALE,455*SCALE),fill="#1c2329")
-    else:
-        for j,h in enumerate([32,45,37,65]): rect((x+31+j*27,470-h,x+49+j*27,470),color,r=3)
+    poster=Image.open(ROOT/"assets"/"previews"/f"{poster_ids[i]}.webp").convert("RGB").resize((170*SCALE,106*SCALE),Image.Resampling.LANCZOS)
+    mask=Image.new("L",poster.size,0)
+    ImageDraw.Draw(mask).rounded_rectangle((0,0,poster.width-1,poster.height-1),radius=8*SCALE,fill=255)
+    im.paste(poster,(x*SCALE,382*SCALE),mask)
     text(x+15,498,label,16,"#f5f2ec",True)
 
-text(52,579,"元ポスト10件 ＋ 追加調査21件   ·   出典・導入条件・ライセンス付き",16,"#697078")
+text(52,579,"GIF・制作コード・出典付き",18,"#0f7a63",True)
+text(815,580,"studio-yebisu.github.io",16,"#697078")
 im=im.resize((1200,630),Image.Resampling.LANCZOS)
-out=ROOT/"assets/og-card.png"
-out.parent.mkdir(parents=True,exist_ok=True)
-im.save(out,optimize=True)
-print(f"Saved {out.name}: 1200×630, {out.stat().st_size} bytes")
+for name in ("og-card-motion-v2.png","og-card.png"):
+    out=ROOT/"assets"/name
+    out.parent.mkdir(parents=True,exist_ok=True)
+    im.save(out,optimize=True)
+    print(f"Saved {out.name}: 1200×630, {out.stat().st_size} bytes")

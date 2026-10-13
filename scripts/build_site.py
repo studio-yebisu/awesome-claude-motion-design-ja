@@ -10,6 +10,36 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 REPO_URL = "https://github.com/studio-yebisu/awesome-claude-motion-design-ja"
 SITE_URL = "https://studio-yebisu.github.io/awesome-claude-motion-design-ja/"
 esc = html.escape
+SOCIAL_IMAGE = SITE_URL + "assets/og-card-motion-v2.png"
+SOCIAL_ALT = "Claude モーショングラフィック制作ガイド。31本の動く作例と、文字・3D・2D・図解など6種類の制作例。"
+
+
+def social_metadata(path, title, description):
+    url = SITE_URL + ("" if path == "index.html" else path)
+    values = [
+        ("property", "og:type", "website"),
+        ("property", "og:locale", "ja_JP"),
+        ("property", "og:site_name", "Claude モーション制作ガイド / StudioYebisu"),
+        ("property", "og:title", title),
+        ("property", "og:description", description),
+        ("property", "og:url", url),
+        ("property", "og:image", SOCIAL_IMAGE),
+        ("property", "og:image:secure_url", SOCIAL_IMAGE),
+        ("property", "og:image:type", "image/png"),
+        ("property", "og:image:width", "1200"),
+        ("property", "og:image:height", "630"),
+        ("property", "og:image:alt", SOCIAL_ALT),
+        ("name", "twitter:card", "summary_large_image"),
+        ("name", "twitter:site", "@studio_yebisu"),
+        ("name", "twitter:title", title),
+        ("name", "twitter:description", description),
+        ("name", "twitter:image", SOCIAL_IMAGE),
+        ("name", "twitter:image:alt", SOCIAL_ALT),
+    ]
+    return f'<link rel="canonical" href="{url}">\n' + "\n".join(
+        f'<meta {kind}="{key}" content="{esc(value, quote=True)}">'
+        for kind, key, value in values
+    )
 
 
 def read_json(path):
@@ -82,8 +112,14 @@ def build():
     filters = '<button class="filter-chip active" type="button" data-category-filter="all" aria-pressed="true">すべて <span>'+str(total)+'</span></button>'
     filters += "".join(f'<button class="filter-chip" type="button" data-category-filter="{c["id"]}" aria-pressed="false">{c["short"]} <span>{counts[c["id"]]}</span></button>' for c in categories.values())
     replacements = {"{{TOTAL}}":str(total), "{{ADDITIONS}}":str(additions), "{{CATEGORY_CARDS}}":"\n".join(cards), "{{FILTERS}}":filters, "{{PROJECT_CARDS}}":"\n".join(project_card(p,categories) for p in projects), "{{SITE_URL}}":SITE_URL, "{{REPO_URL}}":REPO_URL}
-    for name in ("index.html", "projects.html"):
+    social_pages = {
+        "index.html": ("Claude モーショングラフィック制作ガイド｜31本の動く作例", "Opus 5.5向け。31本の動く作例から、制作スキル・ツールを日本語で比較。GIF・制作コード・出典付き。"),
+        "projects.html": ("31本の動く作例｜Claude モーショングラフィック制作ガイド", "制作スキル・動画・UI・3D・2D・図解の31件を検索・比較。動く作例、GIF、制作コードをまとめて確認。"),
+        "guide.html": ("スタックの組み方｜Claude モーショングラフィック制作ガイド", "HTML動画、React動画、触れるWeb、技術解説。つくりたいものから、スキル・描画・書き出しをつなぐ4ルート。"),
+    }
+    for name in ("index.html", "projects.html", "guide.html"):
         text = (ROOT / "templates" / name).read_text(encoding="utf-8")
+        text = text.replace("{{SOCIAL_META}}", social_metadata(name, *social_pages[name]))
         for key,value in replacements.items():
             text = text.replace(key,value)
         assert "{{" not in text, name

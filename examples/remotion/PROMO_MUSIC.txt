@@ -1,0 +1,13 @@
+PROMO FILM — Suno direction (strictly instrumental)
+Target: 40 s, 120 BPM, 4/4, 20 bars (1 bar = 2 s). Key suggestion: F major / D minor.
+
+STYLE PROMPT (paste as Style; set Instrumental ON)
+Instrumental, 120 BPM, 4/4, warm minimal electronic groove, plucky analog synth arpeggio, tight dry drums, punchy gentle sub bass, soft Rhodes chords, crisp claps, short musical stabs, clean modern editorial film score, bright and confident, uplifting but restrained. Structure: 2-bar filtered arpeggio intro with soft kick, full beat drops on bar 3, steady groove with a small fill at bar 8, lighter breakdown bars 9-12, second groove with pluck counter-melody bars 13-16, peak with accents bars 17-18, drums stop at bar 19 and a final warm chord rings out and decays naturally. No vocals.
+
+EXCLUDE (paste as Exclude styles)
+vocals, singing, voice, choir, spoken word, rap, lyrics, vocal chops, humming, whistling, EDM drop, dubstep, trap hi-hat rolls, heavy distortion, epic orchestral, cinematic trailer braams, lo-fi vinyl crackle, guitar solo, sad, dark, aggressive, abrupt ending, fade-in
+
+NOTES
+- The picture cuts on bar lines (0, 4, 8, 16, 20, 24, 28, 32, 36 s). The biggest accents fall at 8 s (reel starts), 32 s (finale montage) and 36 s (outro).
+- The ending should resolve on a sustained chord across bars 19-20 (36-40 s). The composition also applies a gentle fade over 38-40 s.
+- Export as WAV to public/promo/music.wav.
