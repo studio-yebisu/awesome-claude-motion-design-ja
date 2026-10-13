@@ -23,12 +23,21 @@ const lab = new Lab({
 const applyView = lab._applyView.bind(lab);
 lab._applyView = v => {
   if(innerWidth <= 760) {
-    applyView({...v,dist:Math.max(4.7,v.dist),frameX:0});
-    lab.camera.setViewOffset(innerWidth,innerHeight,0,innerHeight*.18,innerWidth,innerHeight);
+    const gallery=lab.q.has('gallery')&&window.parent!==window;
+    applyView({...v,dist:Math.max(gallery?6.0:4.7,v.dist),frameX:0});
+    lab.camera.setViewOffset(innerWidth,innerHeight,0,innerHeight*(gallery?.26:.18),innerWidth,innerHeight);
     lab.camera.updateProjectionMatrix();
   } else applyView(v);
 };
 lab.setView(initialView);
+const inGallery=lab.q.has('gallery')&&window.parent!==window;
+if(inGallery){
+  document.documentElement.classList.add('machine-gallery');
+  document.querySelector('.study-home').removeAttribute('href');
+  addEventListener('keydown',event=>{
+    if(event.key==='Escape'){event.preventDefault();window.parent.postMessage({type:'motion-example:close'},location.origin);}
+  });
+}
 const oldTitle = lab.$('.lab-title'), title = document.getElementById('machine-title');
 title.className=oldTitle.className; title.innerHTML=oldTitle.innerHTML; oldTitle.replaceWith(title);
 lab.$('.lab-how summary').textContent='計算モデルと出典';
@@ -253,3 +262,4 @@ lab.render(0);
 document.querySelector('.loading').remove();
 window.__machineReady=true;
 window.__machine={lab,sim,solve:compressor,spec:SPEC,pistonAt,source:'AirsupHQ/machine-skill@35074a9',motionScale:30};
+if(inGallery)window.parent.postMessage({type:'motion-example:ready'},location.origin);

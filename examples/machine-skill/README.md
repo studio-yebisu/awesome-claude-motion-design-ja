@@ -6,6 +6,16 @@
 
 Codexが[AirsupのMachine Skill](https://github.com/AirsupHQ/machine-skill/blob/35074a98b14c5f414e446cbb53bd8b1798ff70cc/SKILL.md)を参照して、機械形状、計算、画面、映像構成を制作しました。実行キットと録画ツールは同じコミットから取得しています。
 
+## 一覧から、その場で操作する
+
+作例一覧の「3Dサイトを操作」で、実際のページを拡大表示します。「動画を見る」で28秒の映像へ切り替えられます。「別タブで開く」から単独ページへ進めます。
+
+3Dサイトは操作ボタンを押したときに読み込み、動画へ戻すか拡大表示を閉じると描画を終了します。操作ページ内でもEscapeで拡大表示を閉じられます。スマホにも3D操作と表示の切り替えを用意しています。
+
+```powershell
+node examples/machine-skill/check-gallery.mjs
+```
+
 ## 編集する場所
 
 - [machine.js](machine.js)：寸法、部品、材質、配管、ラベル、操作、28秒の演出。

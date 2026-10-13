@@ -1203,15 +1203,15 @@
       "id": "machine-skill",
       "title": "回転が、圧縮に変わる。",
       "role": "操作できる機械の3D図解",
-      "description": "単気筒コンプレッサーのピストン、吸排気弁、断面・分解を見せる28秒の映像。回転数と弁の故障をブラウザで操作できます。",
+      "description": "単気筒コンプレッサーを、その場で回す・切る・分ける3Dサイト。回転数、断面、分解、吸気弁の故障と復帰を操作できます。28秒の紹介動画も掲載。",
       "source_file": "examples/machine-skill/machine.js",
       "version": "Machine Skill 35074a9 / Codex実装",
       "poster_time": 10.0,
       "native_output": {
         "path": "examples/machine-skill/index.html",
-        "label": "操作できる3D作例 ↗",
-        "bytes": 125557,
-        "sha256": "fd3fa23ebfcdcd55a0b22bab2dc33968916b39362533ecab9a853a54b8b0aefb"
+        "label": "3Dサイトを別ページで開く ↗",
+        "bytes": 126782,
+        "sha256": "dc686fdf75afb2f0fc017d1e23255f5c02d55c348a9fe39bc3647332139a575e"
       },
       "skill_commit": "35074a98b14c5f414e446cbb53bd8b1798ff70cc",
       "implementation": "Codex",
@@ -1238,6 +1238,10 @@
           "bytes": 43186,
           "sha256": "5a61b3a80b93b85c78972de4e9c3ef7ee444193d5de6c91eb0989751e2f2b07f"
         }
+      },
+      "interactive_page": {
+        "path": "examples/machine-skill/index.html",
+        "label": "3Dサイトを操作"
       }
     }
   },

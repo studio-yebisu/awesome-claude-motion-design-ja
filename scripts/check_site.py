@@ -30,7 +30,7 @@ class Page(HTMLParser):
         if tag == "link" and attrs.get("rel") == "canonical":
             self.canonical.append(attrs["href"])
         if "id" in attrs: self.ids.append(attrs["id"])
-        for attr in ("href", "src", "poster", "data-src", "data-open-preview", "data-gif"):
+        for attr in ("href", "src", "poster", "data-src", "data-open-preview", "data-gif", "data-interactive-page"):
             if attrs.get(attr): self.links.append(attrs[attr])
         if tag == "img":
             assert "alt" in attrs, f"Image missing alt: {self.path.name}"
