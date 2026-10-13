@@ -1201,9 +1201,9 @@
     },
     "machine-skill": {
       "id": "machine-skill",
-      "title": "回転が、圧縮に変わる。",
-      "role": "操作できる機械の3D図解",
-      "description": "単気筒コンプレッサーを、その場で回す・切る・分ける3Dサイト。回転数、断面、分解、吸気弁の故障と復帰を操作できます。28秒の紹介動画も掲載。",
+      "title": "Machine Skill｜機械を動く3Dに",
+      "role": "スキル紹介・操作デモ",
+      "description": "AirsupのMachine Skillは、機械の名前や見せたい動作をAIエージェントに伝え、操作できる3Dシミュレーションと紹介動画を制作するスキルです。寸法・材質・計算モデルを調べ、断面・分解・X線・入力変更・故障の再現を組み込みます。このコンプレッサーは、その機能を試せるデモです。",
       "source_file": "examples/machine-skill/machine.js",
       "version": "Machine Skill 35074a9 / Codex実装",
       "poster_time": 10.0,

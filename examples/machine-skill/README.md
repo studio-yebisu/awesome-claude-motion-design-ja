@@ -1,6 +1,8 @@
-# Air compressor — Machine Skill 作例
+# Machine Skill — 機能紹介と操作デモ
 
-単気筒エアコンプレッサーの独自モデルです。回転数を変え、断面・分解・X線・スロー・部品名・吸気弁の故障を操作できます。
+AirsupのMachine Skillは、機械の名前や見せたい動作をAIエージェントに伝え、操作できる3Dシミュレーションと紹介動画を制作するスキルです。寸法・材質・計算モデルを調べ、断面・分解・X線・入力変更・故障の再現を組み込みます。
+
+ここに掲載したコンプレッサーは、その機能を試すためのデモです。回転数を変え、断面・分解・X線・スロー・部品名・吸気弁の故障を操作できます。
 
 **[ブラウザで操作する](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/examples/machine-skill/)** · [28秒の紹介動画](../../assets/previews/machine-skill.mp4) · [GIF](../../assets/previews/machine-skill.gif)
 
