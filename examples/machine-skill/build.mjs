@@ -3,7 +3,8 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 const dir = dirname(fileURLToPath(import.meta.url));
-const read = name => readFileSync(join(dir, name), 'utf8');
+// Canonical LF output keeps the single-file artifact and its hash identical after Git checkout.
+const read = name => readFileSync(join(dir, name), 'utf8').replace(/\r\n/g, '\n');
 const safe = source => source.replace(/<\/script/gi, '<\\/script');
 const solver = read('solver.mjs').replace(/^export /gm, '');
 const html = `<!doctype html>

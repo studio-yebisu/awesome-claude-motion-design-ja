@@ -2515,8 +2515,8 @@
         "native_output": {
           "path": "examples/machine-skill/index.html",
           "label": "操作できる3D作例 ↗",
-          "bytes": 127311,
-          "sha256": "bcfb49c2a6bcc0d7f0a3067f8fbc7b957574c46b4e72ee645d44544af8a976bb"
+          "bytes": 125557,
+          "sha256": "fd3fa23ebfcdcd55a0b22bab2dc33968916b39362533ecab9a853a54b8b0aefb"
         },
         "skill_commit": "35074a98b14c5f414e446cbb53bd8b1798ff70cc",
         "implementation": "Codex",
