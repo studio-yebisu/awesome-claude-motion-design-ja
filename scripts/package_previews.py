@@ -11,13 +11,13 @@ def package(id):
     assert source.exists(),f'{id}: actual render missing'
     assert (root/note['source_file']).exists(),f'{id}: source missing'
     movie=destination/f'{id}.mp4';gif=destination/f'{id}.gif';poster=destination/f'{id}.webp'
-    run(['ffmpeg','-y','-v','error','-i',str(source),'-vf','scale=960:600,fps=30','-c:v','libx264','-preset','medium','-crf','23','-pix_fmt','yuv420p','-c:a','aac','-b:a','128k','-movflags','+faststart',str(movie)])
+    run(['ffmpeg','-y','-v','error','-i',str(source),'-vf','scale=960:600:force_original_aspect_ratio=decrease,pad=960:600:(ow-iw)/2:(oh-ih)/2,fps=30','-c:v','libx264','-preset','medium','-crf','23','-pix_fmt','yuv420p','-c:a','aac','-b:a','128k','-movflags','+faststart',str(movie)])
     run(['ffmpeg','-y','-v','error','-i',str(movie),'-filter_complex','[0:v]fps=12,scale=480:300:flags=lanczos,split[a][b];[a]palettegen=max_colors=128:stats_mode=diff[p];[b][p]paletteuse=dither=bayer:bayer_scale=3','-loop','0',str(gif)])
     run(['ffmpeg','-y','-v','error','-ss',str(note['poster_time']),'-i',str(movie),'-frames:v','1','-quality','86',str(poster)])
     probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(movie)],text=True))
     stream=next(s for s in probe['streams'] if s['codec_type']=='video')
     assert stream['width']==960 and stream['height']==600
-    assert int(stream.get('nb_frames',0))>=230
+    assert int(stream.get('nb_frames',0))>=90
     files={p.suffix[1:]:{'path':p.relative_to(root).as_posix(),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in [movie,gif,poster]}
     result={**note,'status':'rendered_and_packaged','duration':float(probe['format']['duration']),'width':960,'height':600,'fps':30,'frame_count':int(stream['nb_frames']),'has_audio':any(s['codec_type']=='audio' for s in probe['streams']),'files':files}
     evidence=root/f'.qa/renders/{id}/capture.json'

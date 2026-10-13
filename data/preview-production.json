@@ -1123,6 +1123,45 @@
       },
       "runtime_feature": "seek(t) engine, shared-element floods, 120 BPM beatmap",
       "processing_proof": null
+    },
+    "code-video-model": {
+      "id": "code-video-model",
+      "title": "配送ローバーの走行（コード編集可能な3Dシーン）",
+      "role": "コード動画の制作",
+      "description": "固定カメラのS字道路を配送ローバーが走行するThree.jsシーン。経路、色、障害物の高さをコードで編集できるCodeVideoModel向け入力作例。",
+      "source_file": "examples/code-video-model/case/scene.js",
+      "version": "CodeVideoModel 404e03d",
+      "poster_time": 2.5,
+      "native_output": {
+        "path": "assets/previews/code-video-model-native.mp4",
+        "label": "コード動画の元ファイル ↗",
+        "bytes": 55326,
+        "sha256": "2d129e5ead9989219c25e0e5aab66c4fb64f93586fd47fce5293f86e092f79ca"
+      },
+      "status": "rendered_and_packaged",
+      "duration": 5.166667,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 155,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/code-video-model.mp4",
+          "bytes": 53586,
+          "sha256": "6e781350be035afe59c4616501eb69453326501b322c46d654fa2d01be1a86e0"
+        },
+        "gif": {
+          "path": "assets/previews/code-video-model.gif",
+          "bytes": 96573,
+          "sha256": "daa7bc03d61680ee6a7c38ecea0ee07e2530f8dff443b21c0550b969e0bcf093"
+        },
+        "webp": {
+          "path": "assets/previews/code-video-model.webp",
+          "bytes": 9714,
+          "sha256": "c71bbbd220c2ae79a6265be52e0f1d77b47ba21be1a7247d5f3bedb886b1becd"
+        }
+      }
     }
   },
   "consultation": {

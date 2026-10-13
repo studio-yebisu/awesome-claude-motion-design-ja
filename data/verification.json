@@ -589,6 +589,25 @@
       "verified_at": "2026-10-12T13:44:49.435204+00:00",
       "verification": "Public GitHub API, README and root license files; not a runtime test",
       "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "code-video-model/CodeVideoModel",
+      "repository": "code-video-model/CodeVideoModel",
+      "url": "https://github.com/code-video-model/CodeVideoModel",
+      "homepage": "https://code-video-model.github.io",
+      "stars": 333,
+      "archived": false,
+      "pushed_at": "2026-10-13T01:45:05Z",
+      "default_branch": "main",
+      "commit_sha": "404e03d67c2977b441622ce94411470bb84984a8",
+      "github_license": "Apache-2.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/code-video-model/CodeVideoModel/blob/404e03d67c2977b441622ce94411470bb84984a8/README.md",
+      "verified_at": "2026-10-13T07:16:52.126447+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test"
     }
   ],
   "errors": []

@@ -277,5 +277,20 @@
     "source_file": "examples/manim/epicycles.py",
     "version": "Manim Community 0.22.0",
     "poster_time": 5.8
+  },
+  "code-video-model": {
+    "id": "code-video-model",
+    "title": "配送ローバーの走行（コード編集可能な3Dシーン）",
+    "role": "コード動画の制作",
+    "description": "固定カメラのS字道路を配送ローバーが走行するThree.jsシーン。経路、色、障害物の高さをコードで編集できるCodeVideoModel向け入力作例。",
+    "source_file": "examples/code-video-model/case/scene.js",
+    "version": "CodeVideoModel 404e03d",
+    "poster_time": 2.5,
+    "native_output": {
+      "path": "assets/previews/code-video-model-native.mp4",
+      "label": "コード動画の元ファイル ↗",
+      "bytes": 55326,
+      "sha256": "2d129e5ead9989219c25e0e5aab66c4fb64f93586fd47fce5293f86e092f79ca"
+    }
   }
 }

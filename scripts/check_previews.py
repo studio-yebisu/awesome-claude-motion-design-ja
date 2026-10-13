@@ -1,4 +1,4 @@
-"""Check all 31 are genuine moving media with matching source and hashes."""
+"""Check all catalog entries are genuine moving media with matching source and hashes."""
 import concurrent.futures,hashlib,json,subprocess
 from pathlib import Path
 from PIL import Image

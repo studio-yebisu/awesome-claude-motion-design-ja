@@ -1,3 +1,4 @@
+import json
 """Draw an original social cover using actual motion specimens and local fonts."""
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
@@ -25,13 +26,14 @@ def rect(box,fill,outline=None,r=0):
 
 rect((48,40,95,87),"#20252b",r=10)
 text(58,40,"m",29,"#f5f2ec",True)
-text(111,45,"Studio Yebisu / オリジナル企画",16)
+text(111,45,"Studio Yebisu / 日本語ガイド",16)
 text(51,128,"CLAUDE OPUS 5.5  /  MOTION DESIGN",16,"#697078")
 text(48,165,"Claudeでつくる、",43,bold=True)
 text(48,225,"モーショングラフィック。",43,bold=True)
-text(51,304,"31本のオリジナル作例から、スキルとツールを選ぶ。",21,"#697078")
+total=len(json.loads((ROOT/"data/curation.json").read_text(encoding="utf-8"))["projects"])
+text(51,304,f"{total}本の動く作例から、スキルとツールを選ぶ。",21,"#697078")
 rect((905,136,1151,334),"#0b5546",r=12)
-text(928,143,"31",88,"#f5f2ec",True)
+text(928,143,str(total),88,"#f5f2ec",True)
 text(936,267,"動く作例",20,"#f5f2ec",True)
 text(936,307,"6カテゴリ / 日本語",14,"#d4e8df")
 
@@ -46,10 +48,10 @@ for i,(label,color) in enumerate(labels):
     im.paste(poster,(x*SCALE,382*SCALE),mask)
     text(x+15,498,label,16,"#f5f2ec",True)
 
-text(52,579,"企画・制作：Studio Yebisu",18,"#0f7a63",True)
+text(52,579,"GIF・制作コード付き",18,"#0f7a63",True)
 text(815,580,"studio-yebisu.github.io",16,"#697078")
 im=im.resize((1200,630),Image.Resampling.LANCZOS)
-for name in ("og-card-motion-v3.png","og-card.png"):
+for name in ("og-card-motion-v4.png","og-card.png"):
     out=ROOT/"assets"/name
     out.parent.mkdir(parents=True,exist_ok=True)
     im.save(out,optimize=True)

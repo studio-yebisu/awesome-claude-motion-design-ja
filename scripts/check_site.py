@@ -41,7 +41,7 @@ def main():
     records = data["projects"]
     verification = json.loads((ROOT/"data/verification.json").read_text(encoding="utf-8"))
     assert not verification["errors"]
-    assert len(records) == 31
+    assert len(records) == 32
     assert len(set(p["repository"] for p in records)) == len(records)
     assert len(set(p["id"] for p in records)) == len(records)
     assert len(data["categories"]) == 6
@@ -82,7 +82,7 @@ def main():
     for path in [ROOT/"assets/site.js",ROOT/"assets/previews.js",ROOT/"examples/seek-demo/scene.js"]:
         subprocess.run(["node","--check",str(path)],check=True,capture_output=True,text=True)
     from PIL import Image
-    for filename in ("og-card.png", "og-card-motion-v3.png"):
+    for filename in ("og-card.png", "og-card-motion-v4.png"):
         with Image.open(ROOT/"assets"/filename) as image:
             assert image.size == (1200,630)
             image.verify()
@@ -94,7 +94,7 @@ def main():
         for key in ("og:title", "og:description", "og:type", "og:locale", "og:site_name", "og:image:alt", "twitter:image:alt"):
             assert page.meta.get(key), (filename,key)
         assert page.meta["og:url"] == url
-        assert page.meta["og:image"] == page.meta["twitter:image"] == site + "assets/og-card-motion-v3.png"
+        assert page.meta["og:image"] == page.meta["twitter:image"] == site + "assets/og-card-motion-v4.png"
         assert page.meta["og:image:secure_url"] == page.meta["og:image"]
         assert page.meta["og:image:type"] == "image/png"
         assert (page.meta["og:image:width"],page.meta["og:image:height"]) == ("1200","630")

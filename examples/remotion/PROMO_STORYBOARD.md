@@ -1,8 +1,5 @@
 # Promo Film — storyboard
 
-Original project, concept, editorial direction and production: **Studio Yebisu**.
-Developed with Claude Opus 5.5 and Codex as production tools.
-
 `src/PromoFilm.tsx` · export `PromoFilm` · props `{ withMusic?: boolean }`
 1920×1080 · 30 fps · 1200 frames (40 s) · no voiceover · Japanese on clearly separated type bands.
 

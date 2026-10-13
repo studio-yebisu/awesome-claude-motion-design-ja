@@ -22,6 +22,7 @@ REPOSITORIES = [
     "whaleyxbt/claude-motion", "howseen-ai/claude-motion-design",
     "abhimahamkali/claude-motion-skill", "iart-ai/motion-skills",
     "apimodels/claude-opus-5-5-video-prompts",
+    "code-video-model/CodeVideoModel",
 ]
 
 

@@ -31,7 +31,7 @@
         card.hidden = !match; if (match) found++;
       });
       chips.forEach(chip => { const active = chip.dataset.categoryFilter === category; chip.classList.toggle("active", active); chip.setAttribute("aria-pressed", String(active)); });
-      $("#list-title").textContent = category === "all" ? "スキル・ツール一覧" : categories[category];
+      $("#list-title").textContent = category === "all" ? "作例とツール" : categories[category];
       $("#result-count").textContent = `${cards.length}件中 ${found}件を表示`;
       $("#no-results").hidden = found !== 0;
       if (save) {
