@@ -572,6 +572,25 @@
       "readme_path": "README.md"
     },
     {
+      "requested_repository": "studio-yebisu/motion-reel",
+      "repository": "studio-yebisu/motion-reel",
+      "url": "https://github.com/studio-yebisu/motion-reel",
+      "homepage": "",
+      "stars": 0,
+      "archived": false,
+      "pushed_at": "2026-10-13T11:55:34Z",
+      "default_branch": "main",
+      "commit_sha": "56198544e69201b1c202e0c00fb90b568a729824",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/studio-yebisu/motion-reel/blob/56198544e69201b1c202e0c00fb90b568a729824/README.md",
+      "verified_at": "2026-10-13T12:00:01.188274+00:00",
+      "verification": "Public GitHub API, README and MIT license; native 8-second wide/vertical rendering and determinism separately recorded in source repository"
+    },
+    {
       "requested_repository": "Vanilagy/mediabunny",
       "repository": "Vanilagy/mediabunny",
       "url": "https://github.com/Vanilagy/mediabunny",

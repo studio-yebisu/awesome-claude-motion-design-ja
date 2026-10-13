@@ -293,6 +293,17 @@
       "sha256": "2d129e5ead9989219c25e0e5aab66c4fb64f93586fd47fce5293f86e092f79ca"
     }
   },
+  "motion-reel": {
+    "id": "motion-reel",
+    "title": "一つの形で、制作からレビューへ",
+    "role": "日本語スキル・時刻指定描画",
+    "description": "同じカードがブリーフ、形、共通時計、確認用フレームへ変形する独自作例。映像のイベントと4つの効果音を同じ秒で指定しています。",
+    "source_file": "examples/motion-reel/scene.js",
+    "version": "Motion Reel 0.1.0 / Playwright 1.64.0 / Chrome 154",
+    "poster_time": 5.8,
+    "authoring_agent": "Codex",
+    "skill_commit": "56198544e69201b1c202e0c00fb90b568a729824"
+  },
   "machine-skill": {
     "id": "machine-skill",
     "title": "回転が、圧縮に変わる。",

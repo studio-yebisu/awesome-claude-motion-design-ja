@@ -1163,6 +1163,42 @@
         }
       }
     },
+    "motion-reel": {
+      "id": "motion-reel",
+      "title": "一つの形で、制作からレビューへ",
+      "role": "日本語スキル・時刻指定描画",
+      "description": "同じカードがブリーフ、形、共通時計、確認用フレームへ変形する独自作例。映像のイベントと4つの効果音を同じ秒で指定しています。",
+      "source_file": "examples/motion-reel/scene.js",
+      "version": "Motion Reel 0.1.0 / Playwright 1.64.0 / Chrome 154",
+      "poster_time": 5.8,
+      "authoring_agent": "Codex",
+      "skill_commit": "56198544e69201b1c202e0c00fb90b568a729824",
+      "status": "rendered_and_packaged",
+      "duration": 8.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 240,
+      "has_audio": true,
+      "runtime_feature": "Native HTML Canvas seek(t), deterministic frame checks and shared audio events",
+      "files": {
+        "mp4": {
+          "path": "assets/previews/motion-reel.mp4",
+          "bytes": 100178,
+          "sha256": "77f9d9f7f02a9c0ad973693b094e915800cecd403710fbd0bfb68ddc4e968a9f"
+        },
+        "gif": {
+          "path": "assets/previews/motion-reel.gif",
+          "bytes": 190472,
+          "sha256": "370ba25c285ac4e9d097d81c9ba2f8087690b9bfe6bb1efeb6cf1039ee51e65c"
+        },
+        "webp": {
+          "path": "assets/previews/motion-reel.webp",
+          "bytes": 11048,
+          "sha256": "bd05431aa935bef860c9a799c72dc71ebc40801a006789d52996bb69e3e75efe"
+        }
+      }
+    },
     "machine-skill": {
       "id": "machine-skill",
       "title": "回転が、圧縮に変わる。",
