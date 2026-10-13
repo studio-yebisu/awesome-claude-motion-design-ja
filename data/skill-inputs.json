@@ -61,5 +61,12 @@
     "path": "skills/kinetic-typography/SKILL.md",
     "commit": "fccc94bd325d824235ee9e715e65abde57b6513a",
     "source_url": "https://github.com/iart-ai/kinetic-typography-skills/blob/fccc94bd325d824235ee9e715e65abde57b6513a/skills/kinetic-typography/SKILL.md"
+  },
+  {
+    "preview_id": "motion-reel",
+    "repository": "studio-yebisu/motion-reel",
+    "path": "skills/motion-reel/SKILL.md",
+    "commit": "56198544e69201b1c202e0c00fb90b568a729824",
+    "source_url": "https://github.com/studio-yebisu/motion-reel/blob/56198544e69201b1c202e0c00fb90b568a729824/skills/motion-reel/SKILL.md"
   }
 ]

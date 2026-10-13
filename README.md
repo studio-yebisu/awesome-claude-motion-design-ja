@@ -1,17 +1,18 @@
 # Claude モーショングラフィック制作ガイド
 
-Claudeを活用したモーショングラフィックスの制作スタックと実装コードをまとめたガイドです。32のスキル・ツールそれぞれに対応する作例動画、GIF、編集可能な実装コードを掲載しています。
+Claudeを活用したモーショングラフィックスの制作スタックと実装コードをまとめたガイドです。33のスキル・ツールそれぞれに対応する作例動画、GIF、編集可能な実装コードを掲載しています。
 
-**[サイトを開く](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/)** · **[32本の作例を見る](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/projects.html)** · **[制作の始め方](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html)**
+**[サイトを開く](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/)** · **[33本の作例を見る](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/projects.html)** · **[制作の始め方](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html)**
 
 ![Claude モーショングラフィック制作ガイド](assets/og-card-motion-v4.png)
 
 ## ガイドの内容
 
-- **32本の作例**：テキスト演出、UI、3D、2D、図解など各ツールの特性に合わせた作例。拡大再生して動きを確認できます。
+- **33本の作例**：テキスト演出、UI、3D、2D、図解など各ツールの特性に合わせた作例。拡大再生して動きを確認できます。
 - **GIFと実装コード**：動きと実装をその場で確認し、コードをコピーして再現・編集できます。
 - **6カテゴリと4つの制作ルート**：用途や実行環境に応じた組み合わせを選択できます。
 - **動きを詰める方法**：[指示の具体化とフレーム単位の修正](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html#motion-direction)。実験記事の要約と、コピーして使える修正ブリーフを掲載しています。
+- **日本語の制作スキル**：[Motion Reel](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html#motion-reel)。ブリーフ、時刻指定描画、音の同期、フレームレビュー、MP4書き出しをつなぐ独自スキルです。
 - **40秒の紹介動画**：作例31本を用いた紹介映像。[制作コード・構成表](examples/remotion/PROMO_README.md)（Suno楽曲含む）も確認できます。
 
 ## 4つの制作ルート
@@ -26,10 +27,11 @@ Claudeを活用したモーショングラフィックスの制作スタック�
 ## スキル・ツール一覧
 
 
-### 制作スキル・事例（8件）
+### 制作スキル・事例（9件）
 
 | スキル・ツール | 使いどころ | ライセンス |
 | --- | --- | --- |
+| [Motion Reel / Studio Yebisu](https://github.com/studio-yebisu/motion-reel) | 商品紹介、UIの変形、文字や図形の短い映像を、編集できるソースと確認資料付きで制作する。 | [MIT](https://github.com/studio-yebisu/motion-reel/blob/56198544e69201b1c202e0c00fb90b568a729824/LICENSE) |
 | [Remotion Agent Skills](https://github.com/remotion-dev/skills) | Reactを用いた動画制作全般。 | [独立LICENSE未確認](https://github.com/remotion-dev/skills/blob/7ba4dcf8ebe1626b00baa41e1f2478113719b60b/README.md) |
 | [Emil Kowalski Skills](https://github.com/emilkowalski/skills) | UIコンポーネントやインタラクションの改善。 | [MIT](https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/LICENSE) |
 | [Motion Graphics Skill Pack](https://github.com/charlie947/motion-graphics-skills) | トーン＆マナーを統一した告知動画やプロモーション映像の制作。 | [MIT](https://github.com/charlie947/motion-graphics-skills/blob/229022ebca76972e119e36ada23a1648d51665ab/LICENSE) |
