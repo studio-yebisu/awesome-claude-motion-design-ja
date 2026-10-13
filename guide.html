@@ -21,7 +21,7 @@
 <meta name="twitter:image:alt" content="モーショングラフィック制作ガイド。動く作例と6カテゴリの制作スタック。"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/site.css"><script src="assets/site.js" defer></script></head>
 <body><a class="skip-link" href="#html">制作ルートへ進む</a><header class="site-header"><div class="header-inner"><a class="brand" href="./"><span class="brand-mark" aria-hidden="true">m<span>↗</span></span><span>Claude モーション制作ガイド<small>Studio Yebisu</small></span></a><nav aria-label="メインメニュー"><a href="./#categories">カテゴリ</a><a href="projects.html">作例とツール</a><a class="nav-github" href="https://github.com/studio-yebisu/awesome-claude-motion-design-ja" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav></div></header>
 <main class="page-width guide-main"><div class="guide-heading"><a class="back-link" href="./">← ガイドのトップ</a><p class="eyebrow">PUT YOUR STACK TOGETHER</p><h1>制作の始め方</h1><p>作りたい表現から制作環境を選ぶ。<br>スキル、描画、時刻制御、書き出しをつなぐ4つのルート。</p></div>
-<nav class="guide-nav" aria-label="制作ルート"><a href="#html">HTML動画</a><a href="#react">React動画</a><a href="#web">動くWeb・UI</a><a href="#explain">解説動画</a><a href="#workflow">制作の流れ</a></nav>
+<nav class="guide-nav" aria-label="制作ルート"><a href="#html">HTML動画</a><a href="#react">React動画</a><a href="#web">動くWeb・UI</a><a href="#explain">解説動画</a><a href="#workflow">制作の流れ</a><a href="#motion-direction">動きを詰める</a></nav>
 
 
 <section class="guide-section" id="html"><p class="eyebrow">01 / HTML TO VIDEO</p><h2>HTMLで短い動画をつくる</h2><p>商品紹介、文字演出、SNS動画ならHTMLベースのHyperFramesが適しています。付属スキルで構成と実装を進め、プレビューしながら修正できます。</p><div class="stack-line"><span>Opus 5.5</span><i>→</i><span>HyperFrames制作スキル</span><i>→</i><span>HTML + 時刻指定できる動き</span><i>→</i><span>Chrome + FFmpeg</span></div><div class="guide-columns"><div><h3>選ぶ理由</h3><p>HTML、CSS、画像、音声を一つのコンポジションにまとめられます。GSAP、Anime.js、Lottie、Three.js等との連携にも対応しています。</p><h3>必要な環境</h3><p>Node.js 22以上とFFmpegが必要です。ローカルでの書き出しに外部クレジットは不要です。外部APIや音声・画像生成を使う場合は別途認証が必要です。</p></div><div><h3>導入の入口</h3><div class="code-panel"><div class="code-header"><span>プロジェクトを作り、プレビュー</span><button data-copy-target="html-command" type="button">コピー</button></div><pre><code id="html-command">npx hyperframes init motion-video
@@ -56,5 +56,28 @@ npm run dev</code></pre></div><p>Studioでプレビュー確認し、調整後�
 後から差し替えたい内容：
 音声・音楽の有無と権利：
 確認したい点と、完成時に受け取るもの：</code></pre></div><p>成果物には編集可能なコード、アセット、書き出し動画、変更箇所のメモを含めることで、保守や再利用が容易になります。</p><p class="source-inline"><a href="https://github.com/howseen-ai/claude-motion-design" target="_blank" rel="noopener noreferrer">seek(t)ルートの公開実装 ↗</a><a href="https://github.com/whaleyxbt/claude-motion" target="_blank" rel="noopener noreferrer">共通タイムラインの実装 ↗</a></p></section>
-<section class="guide-section" id="scope"><h2>作例を入口に、一本つくってみる。</h2><p>目的に近いルートを選び、作例のコードをベースにテキストや素材を差し替えることで、制作を開始できます。</p><p><a href="projects.html">32本の作例</a>にはGIFと編集可能なコードが付属しています。各作例の手法や使用バージョンは<a href="https://github.com/studio-yebisu/awesome-claude-motion-design-ja/blob/main/docs/作例の制作記録.md">作例の制作記録</a>で確認できます。</p><div class="guide-footer-cta"><p>作例のコードから制作を始める。</p><a href="projects.html">31本の作例を見る →</a></div></section>
+<section class="guide-section" id="motion-direction">
+<p class="eyebrow">DIRECT / RENDER / REFINE</p>
+<h2>動きを指定し、フレームで直す</h2>
+<p>「高級感」「もっと派手に」を、色・材質・移動量・時間へ置き換える。見せたい動きを決めてから、途中のフレームを見て仕上げます。</p>
+<div class="guide-columns"><div>
+<h3>先に、見せ方を決める</h3>
+<p>目的、尺、サイズ、FPS、色、書体、場面ごとの主役を指定します。登場の速さ、弾み、要素間の遅れも数値にして、避けたい表現は具体名で伝えます。</p>
+<h3>同じ時刻を描き直せるようにする</h3>
+<p>位置や形をフレーム番号と時刻から決めます。フォントや素材の読み込みを待ち、乱数のseedも固定。ループは全N枚のうち0〜N−1を出力し、終端から冒頭へのつながりを確認します。</p>
+</div><div>
+<h3>気になる動きの前後を見る</h3>
+<p>コンタクトシートで全体を見て、問題の前後を拡大します。「着地が2フレーム遅い」「文字を読む間は動きを止める」のように、場所と変更内容を絞って修正します。</p>
+<h3>音も、書き出した後に確かめる</h3>
+<p>映像のイベントと音のピークを照合し、音量やループ境界も確認します。Web Audioで効果音を合成する方法もあります。数値の検査に加え、完成した動画を視聴して判断します。</p>
+</div></div>
+<div class="code-panel"><div class="code-header"><span>フレームを指定する修正ブリーフ</span><button data-copy-target="frame-review-code" type="button">コピー</button></div><pre><code id="frame-review-code">FPSと、動きが起きるフレーム番号を確認してください。
+その前後の静止画と、場面全体のコンタクトシートを出してください。
+見る点：主役の見やすさ、文字の読む時間、動きの順番、終端のつながり。
+問題ごとに「フレーム番号・見える問題・変更する値」を挙げてください。
+影響の大きい2点を修正し、同じフレームを再出力して比べてください。</code></pre></div>
+<p class="guide-note">参考記事「Opus 5.5 Motion Lab」は、液体タイトル・製品映像・マスコットの実験と修正履歴を公開しています。作者が報告する映像の追加指示は、それぞれ10回・15回・4回。制作時間や回数は、その実験の記録です。</p>
+<p class="source-inline"><a href="https://x.com/flxrnc/status/2105311836190978392" target="_blank" rel="noopener noreferrer">Florenceの実験と修正履歴 ↗</a><a href="https://github.com/studio-yebisu/awesome-claude-motion-design-ja/blob/main/docs/動きを詰める.md" target="_blank" rel="noopener noreferrer">要約と実装の参照先 ↗</a></p>
+</section>
+<section class="guide-section" id="scope"><h2>作例を入口に、一本つくってみる。</h2><p>目的に近いルートを選び、作例のコードをベースにテキストや素材を差し替えることで、制作を開始できます。</p><p><a href="projects.html">32本の作例</a>にはGIFと編集可能なコードが付属しています。各作例の手法や使用バージョンは<a href="https://github.com/studio-yebisu/awesome-claude-motion-design-ja/blob/main/docs/作例の制作記録.md">作例の制作記録</a>で確認できます。</p><div class="guide-footer-cta"><p>作例のコードから制作を始める。</p><a href="projects.html">32本の作例を見る →</a></div></section>
 </main><footer class="site-footer"><div class="page-width footer-inner"><a href="./">Claude モーション制作ガイド</a><a href="https://github.com/studio-yebisu/awesome-claude-motion-design-ja/blob/main/docs/調査ノート.md">掲載ツールの選び方 ↗</a><a href="https://studio-yebisu.github.io/awesome-codex-ppt-skills-ja/">AIスライド制作ガイド ↗</a></div><p class="footer-note">コードと文章はMITライセンスです。ツールおよび素材のライセンスは各項目をご確認ください。</p></footer><div class="toast" id="toast" role="status" aria-live="polite"></div></body></html>

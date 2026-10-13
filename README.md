@@ -4,13 +4,14 @@ Claudeを活用したモーショングラフィックスの制作スタック�
 
 **[サイトを開く](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/)** · **[32本の作例を見る](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/projects.html)** · **[制作の始め方](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html)**
 
-![Claude モーショングラフィック制作ガイド](assets/og-card.png)
+![Claude モーショングラフィック制作ガイド](assets/og-card-motion-v4.png)
 
 ## ガイドの内容
 
 - **32本の作例**：テキスト演出、UI、3D、2D、図解など各ツールの特性に合わせた作例。拡大再生して動きを確認できます。
 - **GIFと実装コード**：動きと実装をその場で確認し、コードをコピーして再現・編集できます。
 - **6カテゴリと4つの制作ルート**：用途や実行環境に応じた組み合わせを選択できます。
+- **動きを詰める方法**：[指示の具体化とフレーム単位の修正](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html#motion-direction)。実験記事の要約と、コピーして使える修正ブリーフを掲載しています。
 - **40秒の紹介動画**：作例31本を用いた紹介映像。[制作コード・構成表](examples/remotion/PROMO_README.md)（Suno楽曲含む）も確認できます。
 
 ## 4つの制作ルート
@@ -96,6 +97,7 @@ Claudeを活用したモーショングラフィックスの制作スタック�
 - [作例の制作記録](docs/作例の制作記録.md)
 - [制作コードと再現手順](examples/README.md)
 - [使用制作スタック](docs/制作スタック.md)
+- [動きを詰める：実験記事の要約と実装の参照先](docs/動きを詰める.md)
 
 使用バージョン・動画ファイル・コードの詳細は[data/preview-production.json](data/preview-production.json)、リポジトリの検証データは[data/verification.json](data/verification.json)に記録しています。
 
