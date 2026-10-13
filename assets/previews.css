@@ -18,3 +18,6 @@
   .preview-dialog-links { flex-wrap:wrap; gap:12px }
   .dialog-site { flex-basis:100%; margin-left:0; padding-top:4px }
 }
+
+/* Put the original tool and its role before its functional demo. */
+.project-card .project-top{margin-top:0}.project-card .project-summary{margin-bottom:16px}.project-card .specimen{margin-top:15px;margin-bottom:0;border-bottom:0}.specimen figcaption .preview-scope{font-size:10px;line-height:1.85;color:#68725f;border-left:2px solid #dce3cc;padding-left:8px;margin:9px 0 13px}.preview-scope b{font-size:9px;display:block;color:#59674d}.category-demo-tool{font-size:11px;font-weight:600;line-height:1.7;margin:0;padding:0 16px 10px}.category-demo-tool a{text-decoration:none}.category-demo-tool a:hover{text-decoration:underline}

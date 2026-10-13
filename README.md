@@ -1,6 +1,6 @@
 # Claude モーショングラフィック制作ガイド
 
-Claudeを活用したモーショングラフィックスの制作スタックと実装コードをまとめたガイドです。34のスキル・ツールそれぞれに対応する作例動画、GIF、編集可能な実装コードを掲載しています。
+Claudeを活用したモーショングラフィックスの制作スタックと実装コードをまとめたガイドです。34件のスキル・ツール・参考資料について、元の役割、機能デモ、GIF、編集可能な実装コードを掲載しています。
 
 **[サイトを開く](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/)** · **[34本の作例を見る](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/projects.html)** · **[制作の始め方](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html)**
 
@@ -101,6 +101,7 @@ Claudeを活用したモーショングラフィックスの制作スタック�
 - [ツールの選定基準](docs/調査ノート.md)
 - [ライセンスと出典一覧](docs/出典とライセンス.md)
 - [作例の制作記録](docs/作例の制作記録.md)
+- [全件のツール・スキルとデモの対応、実行範囲](docs/ツールと作例の対応.md)
 - [制作コードと再現手順](examples/README.md)
 - [使用制作スタック](docs/制作スタック.md)
 - [動きを詰める：実験記事の要約と実装の参照先](docs/動きを詰める.md)
@@ -119,7 +120,7 @@ python -u -m http.server 0 --bind 127.0.0.1
 
 実行後にターミナルに表示されたURLをブラウザで開きます。公開はGitHub Pagesの`main`ブランチ（ルートディレクトリ）です。
 
-編集対象ファイルは[data/curation.json](data/curation.json)、[templates](templates/)、[assets](assets/)です。`index.html`、`projects.html`、`guide.html`、`data/projects.json`、本READMEはスクリプトによるビルド生成物です。詳細は[コントリビューションガイド](CONTRIBUTING.md)を参照してください。
+編集対象ファイルは[data/curation.json](data/curation.json)、[templates](templates/)、[assets](assets/)です。`index.html`、`projects.html`、`guide.html`、`data/projects.json`、本README、[ツールと作例の対応](docs/ツールと作例の対応.md)はスクリプトによるビルド生成物です。詳細は[コントリビューションガイド](CONTRIBUTING.md)を参照してください。
 
 一次資料の更新には[scripts/collect_sources.py](scripts/collect_sources.py)を使用します（`--evidence-dir`には公開リポジトリ外のパスを指定）。
 
