@@ -1,3 +1,8 @@
+/**
+ * Studio Yebisu original promotional film.
+ * Concept, editorial direction and production: Studio Yebisu.
+ * Implementation assistance: Claude Opus 5.5; integration and export: Codex.
+ */
 import type React from 'react';
 import {
   AbsoluteFill,

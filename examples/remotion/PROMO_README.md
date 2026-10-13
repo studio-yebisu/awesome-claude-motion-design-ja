@@ -1,10 +1,12 @@
 # ガイドの紹介動画
 
-1920×1080・30 fps・40秒、日本語テロップ中心の紹介動画。
+**企画・構成・編集・制作：Studio Yebisu**
 
-Claude Code 2.1.287を `claude --model claude-opus-5-5` で実行し、Opus 5.5が [PromoFilm.tsx](src/PromoFilm.tsx)、[構成表](PROMO_STORYBOARD.md)、[音楽の設計案](PROMO_MUSIC.txt)を直接作成した。Codexが素材の配置、compositionの登録、Sunoの操作、音源の調整、書き出し、視覚確認を担当した。
+Studio Yebisuの制作ガイドを紹介するオリジナル映像。1920×1080・30 fps・40秒、日本語テロップ中心。31本の作例と、その使いどころを映像の流れで紹介します。
 
-音楽は2026年10月13日にSuno v6で2候補を生成。ユーザーが選択した [Motion Guide — 動く作例から次の一本へ](https://suno.com/song/b4e784fd-9d8f-431d-bb91-75caf386e196) を使っている。実際にSunoへ渡した制作指示は、40秒・120 BPM・4/4・プラックシンセ・マレット・丸いベース・タイトなドラムによるインスト曲。Opusの音楽設計案は追加の方向づけであり、掲載案と生成指示の完全一致は主張しない。
+Studio Yebisuの企画・制作ディレクションのもと、Claude Code 2.1.287を `claude --model claude-opus-5-5` で実行し、Opus 5.5が [PromoFilm.tsx](src/PromoFilm.tsx)、[構成表](PROMO_STORYBOARD.md)、[音楽の設計案](PROMO_MUSIC.txt)を直接作成した。Codexが素材の配置、compositionの登録、Sunoの操作、音源の調整、書き出し、視覚確認を担当した。
+
+音楽は2026年10月13日にSuno v6で2候補を生成。Studio Yebisuが選択した [Motion Guide — 動く作例から次の一本へ](https://suno.com/song/b4e784fd-9d8f-431d-bb91-75caf386e196) を使っている。実際にSunoへ渡した制作指示は、40秒・120 BPM・4/4・プラックシンセ・マレット・丸いベース・タイトなドラムによるインスト曲。音楽設計案と実際のSunoへの指示を、制作過程の資料として残しています。
 
 選択したWAVは39.08秒、48 kHz stereo。冒頭の拍を合わせ、音量を約−16 LUFSに調整し、自然な終止後にタイトルを読める余白を置いて40秒にした。映像内では最後の2秒に音量のフェードを加えている。曲の選択と最終ミックスの聴感判断は別で、最終ミックスは利用者が試聴できる確認版。
 

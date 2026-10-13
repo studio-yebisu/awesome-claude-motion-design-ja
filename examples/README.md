@@ -1,6 +1,8 @@
 # 動く作例の制作コード
 
-公開ギャラリーの31本の制作ソース。役割・使った版・動画/GIF/ポスターのhashは[data/preview-production.json](../data/preview-production.json)、適用スキルとOpusの担当は[制作記録](../docs/作例の制作記録.md)へ。
+**企画・構成・編集・制作：Studio Yebisu**
+
+公開ギャラリーの31本は、Studio Yebisuが企画し、エージェントと制作スキルを活用して制作したオリジナル作品です。ここに各作品の制作コードと再現手順をまとめています。使用した版とファイル情報は[data/preview-production.json](../data/preview-production.json)、適用スキルと制作工程は[制作記録](../docs/作例の制作記録.md)をご覧ください。
 
 各例はライブラリの描画・専用エンジン・処理結果・スキルの制作方法を使っています。サイトには動画だけを配信し、ここで使うnpm依存を閲覧者へ読み込ませません。
 
@@ -59,4 +61,4 @@ python scripts/build_site.py
 python scripts/check_site.py
 ```
 
-Riveは公式のrocket.riv（MIT）の再生例です。素材を自作したとは扱っていません。自作コードは本ガイドのMIT、ライブラリと素材には各上流の条件が適用されます。
+Riveの作例には公式のrocket.riv（MIT）を使用しています。[素材の帰属と利用条件](../docs/出典とライセンス.md)を掲載しています。オリジナル制作コードは本ガイドのMITで公開しています。

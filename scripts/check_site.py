@@ -1,4 +1,4 @@
-"""Check catalog provenance and links in the generated public artifact."""
+"""Check catalog records, links and share cards in the generated site."""
 from __future__ import annotations
 import json
 import pathlib
@@ -44,7 +44,6 @@ def main():
     assert len(records) == 31
     assert len(set(p["repository"] for p in records)) == len(records)
     assert len(set(p["id"] for p in records)) == len(records)
-    assert Counter(p["origin"] for p in records) == {"source_post":10,"additional":21}
     assert len(data["categories"]) == 6
     assert {p["repository"] for p in records} == {p["repository"] for p in verification["sources"]}
     for p in records:
@@ -83,7 +82,7 @@ def main():
     for path in [ROOT/"assets/site.js",ROOT/"assets/previews.js",ROOT/"examples/seek-demo/scene.js"]:
         subprocess.run(["node","--check",str(path)],check=True,capture_output=True,text=True)
     from PIL import Image
-    for filename in ("og-card.png", "og-card-motion-v2.png"):
+    for filename in ("og-card.png", "og-card-motion-v3.png"):
         with Image.open(ROOT/"assets"/filename) as image:
             assert image.size == (1200,630)
             image.verify()
@@ -95,14 +94,14 @@ def main():
         for key in ("og:title", "og:description", "og:type", "og:locale", "og:site_name", "og:image:alt", "twitter:image:alt"):
             assert page.meta.get(key), (filename,key)
         assert page.meta["og:url"] == url
-        assert page.meta["og:image"] == page.meta["twitter:image"] == site + "assets/og-card-motion-v2.png"
+        assert page.meta["og:image"] == page.meta["twitter:image"] == site + "assets/og-card-motion-v3.png"
         assert page.meta["og:image:secure_url"] == page.meta["og:image"]
         assert page.meta["og:image:type"] == "image/png"
         assert (page.meta["og:image:width"],page.meta["og:image:height"]) == ("1200","630")
         assert page.meta["twitter:card"] == "summary_large_image"
         assert page.meta["twitter:title"] == page.meta["og:title"]
         assert page.meta["twitter:description"] == page.meta["og:description"]
-    print(f"PASS: {len(records)} unique repositories, 6 categories, 10 source-post + 21 additional.")
+    print(f"PASS: {len(records)} unique repositories, 6 categories.")
     print(f"PASS: {checked} local HTML links, HTML anchors, Markdown links, 3 JavaScript syntax checks, OG PNG.")
     print("PASS: canonical + Open Graph + large-image Twitter cards on all 3 public pages.")
     print("License classes:",dict(Counter(p["license_class"] for p in records)))
