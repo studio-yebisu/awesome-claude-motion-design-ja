@@ -23,6 +23,7 @@ REPOSITORIES = [
     "abhimahamkali/claude-motion-skill", "iart-ai/motion-skills",
     "apimodels/claude-opus-5-5-video-prompts",
     "code-video-model/CodeVideoModel",
+    "AirsupHQ/machine-skill",
 ]
 
 

@@ -1,14 +1,14 @@
 # Claude モーショングラフィック制作ガイド
 
-Claudeを活用したモーショングラフィックスの制作スタックと実装コードをまとめたガイドです。32のスキル・ツールそれぞれに対応する作例動画、GIF、編集可能な実装コードを掲載しています。
+Claudeを活用したモーショングラフィックスの制作スタックと実装コードをまとめたガイドです。33のスキル・ツールそれぞれに対応する作例動画、GIF、編集可能な実装コードを掲載しています。
 
-**[サイトを開く](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/)** · **[32本の作例を見る](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/projects.html)** · **[制作の始め方](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html)**
+**[サイトを開く](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/)** · **[33本の作例を見る](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/projects.html)** · **[制作の始め方](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html)**
 
 ![Claude モーショングラフィック制作ガイド](assets/og-card-motion-v4.png)
 
 ## ガイドの内容
 
-- **32本の作例**：テキスト演出、UI、3D、2D、図解など各ツールの特性に合わせた作例。拡大再生して動きを確認できます。
+- **33本の作例**：テキスト演出、UI、3D、2D、図解など各ツールの特性に合わせた作例。拡大再生して動きを確認できます。
 - **GIFと実装コード**：動きと実装をその場で確認し、コードをコピーして再現・編集できます。
 - **6カテゴリと4つの制作ルート**：用途や実行環境に応じた組み合わせを選択できます。
 - **動きを詰める方法**：[指示の具体化とフレーム単位の修正](https://studio-yebisu.github.io/awesome-claude-motion-design-ja/guide.html#motion-direction)。実験記事の要約と、コピーして使える修正ブリーフを掲載しています。
@@ -26,7 +26,7 @@ Claudeを活用したモーショングラフィックスの制作スタック�
 ## スキル・ツール一覧
 
 
-### 制作スキル・事例（8件）
+### 制作スキル・事例（9件）
 
 | スキル・ツール | 使いどころ | ライセンス |
 | --- | --- | --- |
@@ -38,6 +38,7 @@ Claudeを活用したモーショングラフィックスの制作スタック�
 | [/motion for Claude Code](https://github.com/abhimahamkali/claude-motion-skill) | 図形やメタファーを用いた短い解説映像の作成。 | [LICENSE未確認](https://github.com/abhimahamkali/claude-motion-skill/blob/37d44b5d2db8e28c4ebf011cb8f1bd1e260ac09c/README.md) |
 | [iart.ai Motion Skills](https://github.com/iart-ai/motion-skills) | 目的の表現に応じた専用プロンプトやスキルの選択。 | [MIT（索引）](https://github.com/iart-ai/motion-skills/blob/4a9822375b589294aa369fde44205c62dfcf9c27/LICENSE) |
 | [Opus 5.5 Video Prompts](https://github.com/apimodels/claude-opus-5-5-video-prompts) | プロンプトの記述粒度や技術選定パターンの調査。 | [CC BY 4.0（編集資料）](https://github.com/apimodels/claude-opus-5-5-video-prompts/blob/383335d1ed1a6a6d84b772d7c802ca0d221f6410/LICENSE) |
+| [Machine Skill](https://github.com/AirsupHQ/machine-skill) | エンジンやポンプなどの機構説明。操作できるモデルと、その動きを見せる動画の制作。 | [MIT](https://github.com/AirsupHQ/machine-skill/blob/35074a98b14c5f414e446cbb53bd8b1798ff70cc/LICENSE) |
 
 ### 動画制作・書き出し（7件）
 

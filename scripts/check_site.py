@@ -41,7 +41,8 @@ def main():
     records = data["projects"]
     verification = json.loads((ROOT/"data/verification.json").read_text(encoding="utf-8"))
     assert not verification["errors"]
-    assert len(records) == 32
+    curated = json.loads((ROOT/"data/curation.json").read_text(encoding="utf-8"))["projects"]
+    assert {p["id"] for p in records} == {p["id"] for p in curated}
     assert len(set(p["repository"] for p in records)) == len(records)
     assert len(set(p["id"] for p in records)) == len(records)
     assert len(data["categories"]) == 6
@@ -54,7 +55,7 @@ def main():
         assert p["license_url"].startswith("https://")
         for field in ("summary","use_case","requirements","caution","opus_relation","license_label"):
             assert p[field], (p["id"],field)
-    pages = {path.resolve():Page(path) for path in (ROOT/"index.html",ROOT/"projects.html",ROOT/"guide.html",ROOT/"examples/seek-demo/index.html")}
+    pages = {path.resolve():Page(path) for path in (ROOT/"index.html",ROOT/"projects.html",ROOT/"guide.html",ROOT/"examples/seek-demo/index.html",ROOT/"examples/machine-skill/index.html")}
     checked = 0
     for path, page in pages.items():
         assert page.lang == "ja" and page.h1 == 1, path

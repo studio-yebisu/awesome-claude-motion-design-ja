@@ -1162,6 +1162,47 @@
           "sha256": "c71bbbd220c2ae79a6265be52e0f1d77b47ba21be1a7247d5f3bedb886b1becd"
         }
       }
+    },
+    "machine-skill": {
+      "id": "machine-skill",
+      "title": "回転が、圧縮に変わる。",
+      "role": "操作できる機械の3D図解",
+      "description": "単気筒コンプレッサーのピストン、吸排気弁、断面・分解を見せる28秒の映像。回転数と弁の故障をブラウザで操作できます。",
+      "source_file": "examples/machine-skill/machine.js",
+      "version": "Machine Skill 35074a9 / Codex実装",
+      "poster_time": 10.0,
+      "native_output": {
+        "path": "examples/machine-skill/index.html",
+        "label": "操作できる3D作例 ↗",
+        "bytes": 127311,
+        "sha256": "bcfb49c2a6bcc0d7f0a3067f8fbc7b957574c46b4e72ee645d44544af8a976bb"
+      },
+      "skill_commit": "35074a98b14c5f414e446cbb53bd8b1798ff70cc",
+      "implementation": "Codex",
+      "status": "rendered_and_packaged",
+      "duration": 28.0,
+      "width": 960,
+      "height": 600,
+      "fps": 30,
+      "frame_count": 840,
+      "has_audio": false,
+      "files": {
+        "mp4": {
+          "path": "assets/previews/machine-skill.mp4",
+          "bytes": 2876858,
+          "sha256": "85c06548ff5273d847c6d6f0496033b3f25f1c1a6da73c95acbc957c8197adcc"
+        },
+        "gif": {
+          "path": "assets/previews/machine-skill.gif",
+          "bytes": 7285304,
+          "sha256": "f630fe6d5356f86cb923f00861ceebd6f8123694539569f79fc22e758afae1d3"
+        },
+        "webp": {
+          "path": "assets/previews/machine-skill.webp",
+          "bytes": 43186,
+          "sha256": "5a61b3a80b93b85c78972de4e9c3ef7ee444193d5de6c91eb0989751e2f2b07f"
+        }
+      }
     }
   },
   "consultation": {

@@ -39,6 +39,25 @@
       "readme_path": "README.md"
     },
     {
+      "requested_repository": "AirsupHQ/machine-skill",
+      "repository": "AirsupHQ/machine-skill",
+      "url": "https://github.com/AirsupHQ/machine-skill",
+      "homepage": "https://airsup.ai/lab/skill",
+      "stars": 76,
+      "archived": false,
+      "pushed_at": "2026-10-13T09:04:56Z",
+      "default_branch": "main",
+      "commit_sha": "35074a98b14c5f414e446cbb53bd8b1798ff70cc",
+      "github_license": "MIT",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/AirsupHQ/machine-skill/blob/35074a98b14c5f414e446cbb53bd8b1798ff70cc/README.md",
+      "verified_at": "2026-10-13T12:02:01.690291+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test"
+    },
+    {
       "requested_repository": "apimodels/claude-opus-5-5-video-prompts",
       "repository": "apimodels/claude-opus-5-5-video-prompts",
       "url": "https://github.com/apimodels/claude-opus-5-5-video-prompts",
@@ -94,6 +113,25 @@
       "verified_at": "2026-10-12T13:44:49.238457+00:00",
       "verification": "Public GitHub API, README and root license files; not a runtime test",
       "readme_path": "README.md"
+    },
+    {
+      "requested_repository": "code-video-model/CodeVideoModel",
+      "repository": "code-video-model/CodeVideoModel",
+      "url": "https://github.com/code-video-model/CodeVideoModel",
+      "homepage": "https://code-video-model.github.io",
+      "stars": 333,
+      "archived": false,
+      "pushed_at": "2026-10-13T01:45:05Z",
+      "default_branch": "main",
+      "commit_sha": "404e03d67c2977b441622ce94411470bb84984a8",
+      "github_license": "Apache-2.0",
+      "license_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_url": "https://github.com/code-video-model/CodeVideoModel/blob/404e03d67c2977b441622ce94411470bb84984a8/README.md",
+      "verified_at": "2026-10-13T07:16:52.126447+00:00",
+      "verification": "Public GitHub API, README and root license files; not a runtime test"
     },
     {
       "requested_repository": "d3/d3",
@@ -589,25 +627,6 @@
       "verified_at": "2026-10-12T13:44:49.435204+00:00",
       "verification": "Public GitHub API, README and root license files; not a runtime test",
       "readme_path": "README.md"
-    },
-    {
-      "requested_repository": "code-video-model/CodeVideoModel",
-      "repository": "code-video-model/CodeVideoModel",
-      "url": "https://github.com/code-video-model/CodeVideoModel",
-      "homepage": "https://code-video-model.github.io",
-      "stars": 333,
-      "archived": false,
-      "pushed_at": "2026-10-13T01:45:05Z",
-      "default_branch": "main",
-      "commit_sha": "404e03d67c2977b441622ce94411470bb84984a8",
-      "github_license": "Apache-2.0",
-      "license_paths": [
-        "LICENSE"
-      ],
-      "readme_path": "README.md",
-      "readme_url": "https://github.com/code-video-model/CodeVideoModel/blob/404e03d67c2977b441622ce94411470bb84984a8/README.md",
-      "verified_at": "2026-10-13T07:16:52.126447+00:00",
-      "verification": "Public GitHub API, README and root license files; not a runtime test"
     }
   ],
   "errors": []
