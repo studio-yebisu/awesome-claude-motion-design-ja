@@ -19,10 +19,32 @@
 <meta name="twitter:description" content="モーショングラフィック制作の始め方。HTML動画、React動画、Web UI、解説動画の4ルートを解説。">
 <meta name="twitter:image" content="https://studio-yebisu.github.io/awesome-claude-motion-design-ja/assets/og-card-motion-v4.png">
 <meta name="twitter:image:alt" content="モーショングラフィック制作ガイド。動く作例と6カテゴリの制作スタック。"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/site.css"><script src="assets/site.js" defer></script></head>
-<body><a class="skip-link" href="#html">制作ルートへ進む</a><header class="site-header"><div class="header-inner"><a class="brand" href="./"><span class="brand-mark" aria-hidden="true">m<span>↗</span></span><span>Claude モーション制作ガイド<small>Studio Yebisu</small></span></a><nav aria-label="メインメニュー"><a href="./#categories">カテゴリ</a><a href="projects.html">作例とツール</a><a class="nav-github" href="https://github.com/studio-yebisu/awesome-claude-motion-design-ja" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav></div></header>
-<main class="page-width guide-main"><div class="guide-heading"><a class="back-link" href="./">← ガイドのトップ</a><p class="eyebrow">PUT YOUR STACK TOGETHER</p><h1>制作の始め方</h1><p>作りたい表現から制作環境を選ぶ。<br>スキル、描画、時刻制御、書き出しをつなぐ4つのルート。</p></div>
-<nav class="guide-nav" aria-label="制作ルート"><a href="#html">HTML動画</a><a href="#react">React動画</a><a href="#web">動くWeb・UI</a><a href="#explain">解説動画</a><a href="#workflow">制作の流れ</a><a href="#motion-direction">動きを詰める</a><a href="#motion-reel">日本語制作スキル</a></nav>
+<body><a class="skip-link" href="#claude-motion">制作ルートへ進む</a><header class="site-header"><div class="header-inner"><a class="brand" href="./"><span class="brand-mark" aria-hidden="true">m<span>↗</span></span><span>Claude モーション制作ガイド<small>Studio Yebisu</small></span></a><nav aria-label="メインメニュー"><a href="./#categories">カテゴリ</a><a href="projects.html">作例とツール</a><a class="nav-github" href="https://github.com/studio-yebisu/awesome-claude-motion-design-ja" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav></div></header>
+<main class="page-width guide-main"><div class="guide-heading"><a class="back-link" href="./">← ガイドのトップ</a><p class="eyebrow">PUT YOUR STACK TOGETHER</p><h1>制作の始め方</h1><p>作りたい表現から制作環境を選ぶ。<br>チャットで使うClaude Motionと、コードでつくる4つのルート。</p></div>
+<nav class="guide-nav" aria-label="制作ルート"><a href="#claude-motion">Claude Motion</a><a href="#html">HTML動画</a><a href="#react">React動画</a><a href="#web">動くWeb・UI</a><a href="#explain">解説動画</a><a href="#workflow">制作の流れ</a><a href="#motion-direction">動きを詰める</a><a href="#motion-reel">日本語制作スキル</a></nav>
 
+
+<section class="guide-section" id="claude-motion">
+<p class="eyebrow">CLAUDE MOTION / OFFICIAL BETA</p>
+<h2>チャットから短いアニメーションをつくる</h2>
+<p>Claude Motionは、2026年10月8日に公開されたAnthropic公式のベータ機能です。文章、グラフ、図形、画像をコードで動かし、チャットの横で再生・編集してMP4へ書き出せます。</p>
+<div class="stack-line"><span>Claudeのチャット</span><i>→</i><span>制作ブリーフ + 素材</span><i>→</i><span>Motionで再生・修正</span><i>→</i><span>MP4を書き出す</span></div>
+<div class="guide-columns"><div><h3>使いどころ</h3><p>レポートの要点、グラフの変化、製品の操作説明など、手元の内容を短い映像にする入口です。文字、数値、タイミングを会話やエディタで調整できます。</p><h3>始め方</h3><p>Claudeの通常のチャットでアニメーションを依頼するか、ArtifactsのMotionテンプレートから始めます。伝える内容、素材、尺、見た目を指定し、再生してから修正します。</p></div><div><h3>使えるプランと設定</h3><p>2026年10月13日確認時点ではTeamとEnterpriseが対象です。Teamは既定で有効。Enterpriseは所有者がOrganization settings &gt; Artifactsで有効にします。ArtifactsにはCloud code execution and file creationの有効化も必要です。</p><h3>掲載済みの同名スキルとの関係</h3><p>公式サービスのClaude Motionと、<a href="projects.html#claude-motion">whaleyxbt/claude-motion</a>や<a href="projects.html#motion-skill">Claude Code向けの/motionスキル</a>は提供元と導入方法が異なります。コードを手元で管理する制作には、下の4ルートを選べます。</p></div></div>
+<p class="source-inline"><a href="https://claude.com/resources/articles/dashboards-and-motion" target="_blank" rel="noopener noreferrer">Anthropic公式発表 ↗</a><a href="https://support.claude.com/en/articles/17153992-what-are-artifacts-and-how-do-i-use-them" target="_blank" rel="noopener noreferrer">公式ヘルプ：利用条件とMP4出力 ↗</a></p>
+<h3>Charlie Hillsの制作記事</h3>
+<p>元投稿はApple風のアニメーション16種を紹介しています。共通の制作ブリーフを固定し、場面の一行を差し替える進め方が参考になります。作り始める手順と、ブリーフ・プロンプト集へ進めます。</p>
+<p class="source-inline"><a href="https://charliehills.substack.com/p/claude-motion-graphics" target="_blank" rel="noopener noreferrer">Claude /motion：制作手順 ↗</a><a href="https://charliehills.substack.com/p/16-claude-motion-prompts-and-my-brief" target="_blank" rel="noopener noreferrer">16種の作例とブリーフ ↗</a><a href="https://x.com/charliejhills/status/2109956200507076799" target="_blank" rel="noopener noreferrer">紹介したX投稿 ↗</a></p>
+<p class="guide-note">記事の後半と16種のプロンプト本体は、作者のSubstackで無料購読登録が必要です。以下は本ガイドの独自ブリーフです。記事の全文や購読部分は転載していません。</p>
+<div class="code-panel"><div class="code-header"><span>短尺動画の制作ブリーフ / 本ガイドの独自例</span><button data-copy-target="claude-motion-brief" type="button">コピー</button></div><pre><code id="claude-motion-brief">Claude Motionで、6秒の製品紹介アニメーションを作ってください。
+目的：無音で見ても、製品の特徴を一つ理解できること。
+入力：この後に渡す製品名・説明・ロゴだけを使う。
+見た目：明るい背景、アクセント色は一色、大きく読みやすい文字。
+時間：最初の1秒で主役を見せ、最後の2秒は見出しを止めて読む時間にする。
+動き：主役の登場と要点の強調に絞り、文字を動かし続けない。
+場面：[ここだけを差し替える。例：製品カードが開き、特徴を一つ表示する]
+製品名・説明・ロゴ：[ここに入力する]</code></pre></div>
+<p><a href="https://github.com/studio-yebisu/awesome-claude-motion-design-ja/blob/main/docs/Claude%20Motion.md" target="_blank" rel="noopener noreferrer">用途の判断と確認した資料 →</a></p>
+</section>
 
 <section class="guide-section" id="html"><p class="eyebrow">01 / HTML TO VIDEO</p><h2>HTMLで短い動画をつくる</h2><p>商品紹介、文字演出、SNS動画ならHTMLベースのHyperFramesが適しています。付属スキルで構成と実装を進め、プレビューしながら修正できます。</p><div class="stack-line"><span>Opus 5.5</span><i>→</i><span>HyperFrames制作スキル</span><i>→</i><span>HTML + 時刻指定できる動き</span><i>→</i><span>Chrome + FFmpeg</span></div><div class="guide-columns"><div><h3>選ぶ理由</h3><p>HTML、CSS、画像、音声を一つのコンポジションにまとめられます。GSAP、Anime.js、Lottie、Three.js等との連携にも対応しています。</p><h3>必要な環境</h3><p>Node.js 22以上とFFmpegが必要です。ローカルでの書き出しに外部クレジットは不要です。外部APIや音声・画像生成を使う場合は別途認証が必要です。</p></div><div><h3>導入の入口</h3><div class="code-panel"><div class="code-header"><span>プロジェクトを作り、プレビュー</span><button data-copy-target="html-command" type="button">コピー</button></div><pre><code id="html-command">npx hyperframes init motion-video
 cd motion-video
